@@ -17,19 +17,26 @@ services:
       - MONGODB_URI=mongodb://mongo:27017/Mission-Ready-M5
     depends_on:
       - mongo
-    networks:
-      - my-network
+    # networks:
+    #   - my-network
 
   mongo:
     image: mongo
     restart: always
+    expose:
+      - "27017"
     ports:
       - "27017:27017"
-    networks:
-      - my-network
+    # networks:
+    #   - my-network
+    volumes:
+      - mongo-data:/data/db # Add this line to define a volume for MongoDB data
 
-networks:
-  my-network:
-    driver: bridge
+# networks:
+#   my-network:
+#     driver: bridge
+
+volumes:
+  mongo-data: # Define the volume for MongoDB data
 # docker network create my-network
 # docker-compose up
