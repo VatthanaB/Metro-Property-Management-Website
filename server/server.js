@@ -1,18 +1,27 @@
-// server/server.js
+// Load environment variables
+const dotenv = require("dotenv");
+
+// Import required modules
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const greetingRoutes = require("./routes/vatthana/greetingRoutes");
 const cors = require("cors");
-const dotenv = require("dotenv");
 
+// Import routes
+const greetingRoutes = require("./routes/vatthana/greetingRoutes");
+const propertyRoutes = require("./routes/vatthana/propertyRoutes");
+
+// Setup express app
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
+// ... rest of your code
 const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://mongodb:27018/Mission-Ready-M5";
+  process.env.MONGODB_URI || "mongodb://mongo:27018/Mission-Ready-M5";
 
 // MongoDB connection
 mongoose.connect(MONGODB_URI, {
@@ -28,6 +37,9 @@ db.once("open", () => {
 
 // Use the greetingRoutes for the /greetings endpoint
 app.use("/greetings", greetingRoutes);
+
+// Use the propertyRoutes for the /properties endpoint
+app.use("/properties", propertyRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
