@@ -40,3 +40,5 @@ volumes:
   mongo-data: # Define the volume for MongoDB data
 # docker network create my-network
 # docker-compose up
+# docker-compose build
+
