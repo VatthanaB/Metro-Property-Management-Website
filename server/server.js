@@ -2,7 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const greetingRoutes = require("./routes/greetingRoutes");
+const greetingRoutes = require("./routes/vatthana/greetingRoutes");
 const cors = require("cors");
 const dotenv = require("dotenv");
 
