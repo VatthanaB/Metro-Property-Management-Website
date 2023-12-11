@@ -1,26 +1,24 @@
-import { useState, useEffect } from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Homepage from "./pages/vatthana/Homepage";
+import ErrorPage from "./pages/Root/ErrorPage";
+import RootLayout from "./pages/Root/RootLayout";
 
-import axios from "axios";
-import "./App.css";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    //  errorElement: <ErrorPage />, for error page
+    errorElement: <ErrorPage />,
 
+    children: [
+      { index: true, element: <Homepage /> },
+      { path: "/about", element: <h1>About</h1> },
+      { path: "/contact", element: <h1>Contact</h1> },
+    ],
+  },
+]);
 function App() {
-  const [greetings, setGreetings] = useState("Hello World");
-
-  useEffect(() => {
-    axios.get("http://localhost:5000/greetings").then((res) => {
-      console.log(res.data);
-      setGreetings(res.data);
-    });
-  }, []);
-
-  return (
-    <>
-      <div>
-        <h1>Greetings from the Team :</h1>
-        <h2>{greetings[0].message}</h2>
-      </div>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
