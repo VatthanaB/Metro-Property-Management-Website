@@ -15,7 +15,7 @@ program
     try {
       const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, "utf8"));
 
-      const client = new MongoClient(process.env.MONGODB_SEEDING);
+      const client = new MongoClient("mongodb://localhost:27017");
       await client.connect();
 
       const db = client.db(databaseName);

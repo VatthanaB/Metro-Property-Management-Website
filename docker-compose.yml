@@ -14,22 +14,28 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGODB_URI=mongodb://mongo:27018/Mission-Ready-M5
-      - MONGODB_SEEDING="mongodb://mongo:27018"
+      - MONGODB_URI=mongodb://mongo:27017/Mission-Ready-M5
+      - MONGODB_SEEDING="mongodb://localhost:27017"
     depends_on:
       - mongo
-    command: ["sh", "-c", "npm run seed && node server.js"] # Add this line to run the seeding during startup
+
   mongo:
-    image: mongo
+    image: mongo:latest
+    container_name: mongo
     restart: always
     expose:
-      - "27018"
+      - "27017"
     ports:
-      - "27018:27018"
+      - "27017:27017"
 
     volumes:
       - mongo-data:/data/db # Add this line to define a volume for MongoDB data
-
+  seed-data:
+    build:
+      context: ./mongo
+      dockerfile: Dockerfile
+    depends_on:
+      - mongo
 volumes:
   mongo-data: # Define the volume for MongoDB data
 
