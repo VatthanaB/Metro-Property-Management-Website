@@ -9,7 +9,7 @@ const propeertySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  propertyType: {
+  type: {
     type: String,
     required: true,
   },
@@ -17,7 +17,7 @@ const propeertySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  propertyDescription: {
+  description: {
     type: String,
     required: true,
   },
@@ -25,6 +25,19 @@ const propeertySchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  bedrooms: {
+    type: Number,
+    required: true,
+  },
+  bathrooms: {
+    type: Number,
+    required: true,
+  },
+  parking: {
+    type: Number,
+    required: true,
+  },
+
   ameneties: {
     type: [String],
     required: false,

@@ -1,6 +1,6 @@
 // Load environment variables
 const dotenv = require("dotenv");
-
+dotenv.config();
 // Import required modules
 const express = require("express");
 const mongoose = require("mongoose");
@@ -21,8 +21,8 @@ app.use(bodyParser.json());
 
 // ... rest of your code
 const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://mongo:27018/Mission-Ready-M5";
-
+  process.env.MONGODB_URI || "mongodb://mongo:27017/Mission-Ready-M5";
+console.log(MONGODB_URI);
 // MongoDB connection
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
