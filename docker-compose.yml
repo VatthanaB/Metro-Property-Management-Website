@@ -36,10 +36,14 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - mongo
+    command: sh -c 'mongoimport --host mongo --db Mission-Ready-M5 --collection properties --type json --file /docker-entrypoint-initdb.d/property.json --jsonArray || true'
 volumes:
   mongo-data: # Define the volume for MongoDB data
 
 # docker-compose build        for major changes on Dockerfile / docker-compose.yml
 #docker-compose up --build     for minor day to day changes
+
+# If you see double datas in the db run those two commands to reset the volumes
+# docker-compose down -v       to remove all volumes
 # docker-compose up
 
