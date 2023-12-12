@@ -15,9 +15,10 @@ services:
       - "5000:5000"
     environment:
       - MONGODB_URI=mongodb://mongo:27018/Mission-Ready-M5
+      - MONGODB_SEEDING="mongodb://mongo:27018"
     depends_on:
       - mongo
-
+    command: ["sh", "-c", "npm run seed && node server.js"] # Add this line to run the seeding during startup
   mongo:
     image: mongo
     restart: always
@@ -32,6 +33,7 @@ services:
 volumes:
   mongo-data: # Define the volume for MongoDB data
 
-# docker-compose build
+# docker-compose build        for major changes on Dockerfile / docker-compose.yml
+#docker-compose up --build     for minor day to day changes
 # docker-compose up
 
