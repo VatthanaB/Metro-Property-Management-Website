@@ -1,12 +1,12 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MetroLogo from "../../assets/images/MetroLogo.png";
 import { IoSearchSharp } from "react-icons/io5";
 import classNames from "classnames";
 
 export default function MainNavigation() {
-  const location = useLocation();
-  const currentPath = location.pathname;
-  console.log("currentPath", currentPath);
+  // const location = useLocation();
+  // const currentPath = location.pathname;
+  // console.log("currentPath", currentPath);
   const links = [
     {
       href: "/",
@@ -25,8 +25,9 @@ export default function MainNavigation() {
       className={classNames({
         "flex justify-between space-x-6  py-5 px-14   h-30 items-center z-auto ": true,
         " pr-5 lg:pr-28": true,
-        " bg-metro-grey": currentPath !== "/",
-        hidden: currentPath === "/",
+        "bg-black bg-opacity-50": true,
+        // " bg-metro-grey": currentPath !== "/",
+        // hidden: currentPath === "/",
       })}
     >
       <div
