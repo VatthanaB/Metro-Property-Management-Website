@@ -33,6 +33,10 @@ const router = createBrowserRouter([
         element: <div className={underConstructionStyle}>Coming soon ...</div>,
       },
       {
+        path: "/property/:id",
+        element: <div className={underConstructionStyle}>Coming soon ...</div>,
+      },
+      {
         path: "/search",
         children: [
           { index: true, element: <SearchPage /> },

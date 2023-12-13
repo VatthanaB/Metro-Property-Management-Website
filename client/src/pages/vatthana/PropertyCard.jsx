@@ -1,6 +1,13 @@
 const PropertyCard = (property) => {
+  const redirectToIndividualProperty = () => {
+    console.log(property._id);
+    window.location.href = `/property/${property._id}`;
+  };
   return (
-    <div className="max-w-4xl rounded overflow-hidden shadow-lg m-4">
+    <div
+      onClick={redirectToIndividualProperty}
+      className="max-w-4xl rounded overflow-hidden shadow-lg m-4"
+    >
       <img
         className="w-full"
         src={`/images/${property.image}.jpeg`}

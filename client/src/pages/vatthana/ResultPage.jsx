@@ -2,6 +2,7 @@ import { useRouteLoaderData } from "react-router-dom";
 import PropertyCard from "./PropertyCard";
 const ResultPage = () => {
   const data = useRouteLoaderData("root");
+
   console.log(data);
   console.log("ResultPage");
 
