@@ -1,8 +1,9 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { FiltersProvider } from "./Utils/contexts/FilterManagementContext";
 import Homepage from "./pages/seungmien/Homepage";
 import ErrorPage from "./pages/Root/ErrorPage";
 import RootLayout from "./pages/Root/RootLayout";
-import ResultPage from "./pages/vatthana/ResultPage";
+import ResultPage from "./pages/ResultPage/ResultPage";
 import SearchPage from "./pages/jason/SearchPage";
 
 const underConstructionStyle =
@@ -47,7 +48,11 @@ const router = createBrowserRouter([
   },
 ]);
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <FiltersProvider>
+      <RouterProvider router={router} />
+    </FiltersProvider>
+  );
 }
 
 export default App;
