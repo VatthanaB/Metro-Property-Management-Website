@@ -9,7 +9,7 @@ export default function MainNavigation() {
   // console.log("currentPath", currentPath);
   const links = [
     {
-      href: "/",
+      href: "/search",
       label: (
         <>
           <IoSearchSharp className="text-4xl mx-3" /> Rental Property
