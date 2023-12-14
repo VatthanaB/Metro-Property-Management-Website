@@ -9,6 +9,7 @@ import PropertyCard from "./components/PropertyCard";
 import { filterData } from "../../Utils/filteringHandler.js";
 import { useFilters } from "../../Utils/contexts/FilterManagementContext";
 import { usePagination } from "../../Utils/paginationUtils.js"; // Import the pagination utility
+// import SearchForm from "../SearchPage/components/SearchForm.jsx";
 
 // ResultPage component to display filtered properties with pagination
 const ResultPage = () => {
@@ -48,6 +49,7 @@ const ResultPage = () => {
   return (
     <div className="flex justify-center items-center mt-10 ">
       <div className="w-3/4">
+        {/* <SearchForm /> */}
         {/* Header */}
         <Header onSortChange={handleSortChange} resultNumber={resultNumber} />
 

@@ -58,7 +58,7 @@ const Header = ({ onSortChange, resultNumber }) => {
               <li
                 className={`rounded-3xl text-sm px-3 py-1 border border-gray-300 self-center ${
                   // Applying background color based on whether the filter is applied.
-                  isFilterApplied("ameneties", amenity)
+                  isFilterApplied("amenities", amenity)
                     ? "bg-red-500 text-white"
                     : "bg-gray-100"
                 }`}

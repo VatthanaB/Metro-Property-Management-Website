@@ -7,28 +7,28 @@ const FiltersContext = createContext();
 // eslint-disable-next-line react/prop-types
 export const FiltersProvider = ({ children }) => {
   // Initial state for filters
-  // const initialFilters = {
-  //   type: "",
-  //   location: "",
-  //   bedrooms: null,
-  //   bathrooms: null,
-  //   minPrice: null,
-  //   maxPrice: null,
-  //   ameneties: [],
-  //   parking: null,
-  //   vicinity: [],
-  // };
   const initialFilters = {
-    type: [],
-    location: [],
+    type: "",
+    location: "",
     bedrooms: null,
     bathrooms: null,
     minPrice: null,
     maxPrice: null,
-    ameneties: ["Garage"],
+    amenities: [],
     parking: null,
-    vicinity: ["Gym", "School District"],
+    vicinity: [],
   };
+  // const initialFilters = {
+  //   type: [],
+  //   location: [],
+  //   bedrooms: null,
+  //   bathrooms: null,
+  //   minPrice: null,
+  //   maxPrice: null,
+  //   amenities: ["Garage"],
+  //   parking: null,
+  //   vicinity: ["Gym", "School District"],
+  // };
   // const initialFilters = {
   //   type: "",
   //   location: "",
