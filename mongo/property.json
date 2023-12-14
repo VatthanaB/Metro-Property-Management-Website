@@ -257,26 +257,7 @@
     "ameneties": ["Garage", "Swimming Pool"],
     "vicinity": ["Public Transport", "Childcare"]
   },
-  {
-    "image": "Apartment",
-    "address": "789 Parnell Road, Parnell, East Auckland",
-    "type": "Apartment",
-    "location": "East Auckland",
-    "description": "Modern Penthouse: Experience luxury living in this 2-bedroom penthouse apartment in Parnell. The open-plan living area features floor-to-ceiling windows that showcase stunning city views. A modern kitchen, sleek bathroom, and spacious balcony create a luxurious retreat. Enjoy access to a rooftop terrace with a swimming pool and panoramic views. Located in the heart of Parnell, close to restaurants, bars, and shops. Ideal for professionals seeking a sophisticated and convenient lifestyle.",
-    "price": 480,
-    "bedrooms": 3,
-    "bathrooms": 4,
-    "parking": 2,
-    "ameneties": [
-      "Pet Friendly",
-      "Allows Smoking",
-      "Furnished",
-      "Garage",
-      "Central Heating",
-      "Swimming Pool"
-    ],
-    "vicinity": ["School District", "Parks", "Restaurants"]
-  },
+
   {
     "image": "Apartment",
     "address": "1011 Meadowbank Road, Meadowbank, East Auckland",
@@ -291,19 +272,6 @@
     "vicinity": ["Public Transport", "Childcare"]
   },
   {
-    "image": "Unit",
-    "address": "456 Remuera Road, Remuera, East Auckland",
-    "type": "Unit",
-    "location": "East Auckland",
-    "description": "Family Haven: This 4-bedroom house in Remuera offers a haven for families seeking a prestigious lifestyle. The spacious interior features multiple living areas, a modern kitchen, and a separate laundry. A swimming pool and large backyard provide a haven for children and pets. Located within walking distance of schools, parks, and the Remuera Village. Ideal for families seeking a luxurious and convenient lifestyle.",
-    "price": 397,
-    "bedrooms": 2,
-    "bathrooms": 4,
-    "parking": 1,
-    "ameneties": ["Garage", "Swimming Pool"],
-    "vicinity": ["Public Transport", "Childcare"]
-  },
-  {
     "image": "Apartment",
     "address": "789 Parnell Road, Parnell, East Auckland",
     "type": "Apartment",
@@ -322,6 +290,19 @@
       "Swimming Pool"
     ],
     "vicinity": ["School District", "Parks", "Restaurants"]
+  },
+  {
+    "image": "Unit",
+    "address": "456 Remuera Road, Remuera, East Auckland",
+    "type": "Unit",
+    "location": "East Auckland",
+    "description": "Family Haven: This 4-bedroom house in Remuera offers a haven for families seeking a prestigious lifestyle. The spacious interior features multiple living areas, a modern kitchen, and a separate laundry. A swimming pool and large backyard provide a haven for children and pets. Located within walking distance of schools, parks, and the Remuera Village. Ideal for families seeking a luxurious and convenient lifestyle.",
+    "price": 397,
+    "bedrooms": 2,
+    "bathrooms": 4,
+    "parking": 1,
+    "ameneties": ["Garage", "Swimming Pool"],
+    "vicinity": ["Public Transport", "Childcare"]
   },
   {
     "image": "Apartment",
@@ -407,6 +388,26 @@
       "Restaurants",
       "Shops"
     ]
+  },
+  {
+    "image": "Apartment",
+    "address": "789 Parnell Road, Parnell, East Auckland",
+    "type": "Apartment",
+    "location": "East Auckland",
+    "description": "Modern Penthouse: Experience luxury living in this 2-bedroom penthouse apartment in Parnell. The open-plan living area features floor-to-ceiling windows that showcase stunning city views. A modern kitchen, sleek bathroom, and spacious balcony create a luxurious retreat. Enjoy access to a rooftop terrace with a swimming pool and panoramic views. Located in the heart of Parnell, close to restaurants, bars, and shops. Ideal for professionals seeking a sophisticated and convenient lifestyle.",
+    "price": 480,
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "parking": 2,
+    "ameneties": [
+      "Pet Friendly",
+      "Allows Smoking",
+      "Furnished",
+      "Garage",
+      "Central Heating",
+      "Swimming Pool"
+    ],
+    "vicinity": ["School District", "Parks", "Restaurants"]
   },
   {
     "image": "House",

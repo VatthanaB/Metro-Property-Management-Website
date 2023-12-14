@@ -257,6 +257,20 @@
     "ameneties": ["Garage", "Swimming Pool"],
     "vicinity": ["Public Transport", "Childcare"]
   },
+
+  {
+    "image": "Apartment",
+    "address": "1011 Meadowbank Road, Meadowbank, East Auckland",
+    "type": "Apartment",
+    "location": "East Auckland",
+    "description": "Family Home with Pool: This 4-bedroom house in Meadowbank offers the perfect combination of space and functionality. The modern kitchen features stainless steel appliances and a large pantry, while the open-plan living area opens onto a sunny deck and sparkling pool. A separate media room and study provide additional space for families to enjoy. Located in a family-friendly neighborhood close to schools, parks, and amenities. Ideal for families seeking a comfortable and convenient lifestyle.",
+    "price": 614,
+    "bedrooms": 1,
+    "bathrooms": 3,
+    "parking": 4,
+    "ameneties": ["Pet Friendly", "Allows Smoking", "Garage", "Swimming Pool"],
+    "vicinity": ["Public Transport", "Childcare"]
+  },
   {
     "image": "Apartment",
     "address": "789 Parnell Road, Parnell, East Auckland",
@@ -276,19 +290,6 @@
       "Swimming Pool"
     ],
     "vicinity": ["School District", "Parks", "Restaurants"]
-  },
-  {
-    "image": "Apartment",
-    "address": "1011 Meadowbank Road, Meadowbank, East Auckland",
-    "type": "Apartment",
-    "location": "East Auckland",
-    "description": "Family Home with Pool: This 4-bedroom house in Meadowbank offers the perfect combination of space and functionality. The modern kitchen features stainless steel appliances and a large pantry, while the open-plan living area opens onto a sunny deck and sparkling pool. A separate media room and study provide additional space for families to enjoy. Located in a family-friendly neighborhood close to schools, parks, and amenities. Ideal for families seeking a comfortable and convenient lifestyle.",
-    "price": 614,
-    "bedrooms": 1,
-    "bathrooms": 3,
-    "parking": 4,
-    "ameneties": ["Pet Friendly", "Allows Smoking", "Garage", "Swimming Pool"],
-    "vicinity": ["Public Transport", "Childcare"]
   },
   {
     "image": "Unit",
@@ -303,39 +304,7 @@
     "ameneties": ["Garage", "Swimming Pool"],
     "vicinity": ["Public Transport", "Childcare"]
   },
-  {
-    "image": "Apartment",
-    "address": "789 Parnell Road, Parnell, East Auckland",
-    "type": "Apartment",
-    "location": "East Auckland",
-    "description": "Modern Penthouse: Experience luxury living in this 2-bedroom penthouse apartment in Parnell. The open-plan living area features floor-to-ceiling windows that showcase stunning city views. A modern kitchen, sleek bathroom, and spacious balcony create a luxurious retreat. Enjoy access to a rooftop terrace with a swimming pool and panoramic views. Located in the heart of Parnell, close to restaurants, bars, and shops. Ideal for professionals seeking a sophisticated and convenient lifestyle.",
-    "price": 480,
-    "bedrooms": 3,
-    "bathrooms": 4,
-    "parking": 2,
-    "ameneties": [
-      "Pet Friendly",
-      "Allows Smoking",
-      "Furnished",
-      "Garage",
-      "Central Heating",
-      "Swimming Pool"
-    ],
-    "vicinity": ["School District", "Parks", "Restaurants"]
-  },
-  {
-    "image": "Apartment",
-    "address": "1011 Meadowbank Road, Meadowbank, East Auckland",
-    "type": "Apartment",
-    "location": "East Auckland",
-    "description": "Family Home with Pool: This 4-bedroom house in Meadowbank offers the perfect combination of space and functionality. The modern kitchen features stainless steel appliances and a large pantry, while the open-plan living area opens onto a sunny deck and sparkling pool. A separate media room and study provide additional space for families to enjoy. Located in a family-friendly neighborhood close to schools, parks, and amenities. Ideal for families seeking a comfortable and convenient lifestyle.",
-    "price": 614,
-    "bedrooms": 1,
-    "bathrooms": 3,
-    "parking": 4,
-    "ameneties": ["Pet Friendly", "Allows Smoking", "Garage", "Swimming Pool"],
-    "vicinity": ["Public Transport", "Childcare"]
-  },
+
   {
     "image": "Townhouse",
     "address": "246 Botany Road, Botany Downs, East Auckland",
@@ -376,6 +345,19 @@
     "vicinity": ["Public Transport", "School District"]
   },
   {
+    "image": "Apartment",
+    "address": "1011 Meadowbank Road, Meadowbank, East Auckland",
+    "type": "Apartment",
+    "location": "East Auckland",
+    "description": "Family Home with Pool: This 4-bedroom house in Meadowbank offers the perfect combination of space and functionality. The modern kitchen features stainless steel appliances and a large pantry, while the open-plan living area opens onto a sunny deck and sparkling pool. A separate media room and study provide additional space for families to enjoy. Located in a family-friendly neighborhood close to schools, parks, and amenities. Ideal for families seeking a comfortable and convenient lifestyle.",
+    "price": 614,
+    "bedrooms": 1,
+    "bathrooms": 3,
+    "parking": 4,
+    "ameneties": ["Pet Friendly", "Allows Smoking", "Garage", "Swimming Pool"],
+    "vicinity": ["Public Transport", "Childcare"]
+  },
+  {
     "image": "Unit",
     "address": "748 Great South Rd, Otahuhu, South Auckland",
     "type": "Unit",
@@ -407,6 +389,26 @@
       "Restaurants",
       "Shops"
     ]
+  },
+  {
+    "image": "Apartment",
+    "address": "789 Parnell Road, Parnell, East Auckland",
+    "type": "Apartment",
+    "location": "East Auckland",
+    "description": "Modern Penthouse: Experience luxury living in this 2-bedroom penthouse apartment in Parnell. The open-plan living area features floor-to-ceiling windows that showcase stunning city views. A modern kitchen, sleek bathroom, and spacious balcony create a luxurious retreat. Enjoy access to a rooftop terrace with a swimming pool and panoramic views. Located in the heart of Parnell, close to restaurants, bars, and shops. Ideal for professionals seeking a sophisticated and convenient lifestyle.",
+    "price": 480,
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "parking": 2,
+    "ameneties": [
+      "Pet Friendly",
+      "Allows Smoking",
+      "Furnished",
+      "Garage",
+      "Central Heating",
+      "Swimming Pool"
+    ],
+    "vicinity": ["School District", "Parks", "Restaurants"]
   },
   {
     "image": "House",

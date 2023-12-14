@@ -25,7 +25,7 @@ export default function MainNavigation() {
       className={classNames({
         "flex justify-between space-x-6  py-5 px-14   h-30 items-center z-auto ": true,
         " pr-5 lg:pr-28": true,
-        "bg-black bg-opacity-50": true,
+        "bg-black bg-opacity-80": true,
         // " bg-metro-grey": currentPath !== "/",
         // hidden: currentPath === "/",
       })}
@@ -53,7 +53,9 @@ export default function MainNavigation() {
         </ul>
       </div>
 
-      <p className="text-red-600 font-bold text-xl ">09 391 4642</p>
+      <Link to="/search/results" className="text-red-600 font-bold text-xl ">
+        09 391 4642
+      </Link>
     </nav>
   );
 }
