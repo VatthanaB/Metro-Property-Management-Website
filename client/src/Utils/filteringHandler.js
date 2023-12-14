@@ -11,8 +11,9 @@ export const filterData = (data, filters) => {
 
   const filteredData = data.filter((property) => {
     return (
-      filterArrays(property.type, property.Type) &&
-      (filters.location === "" || property.location === filters.location) &&
+      // Check each filter condition
+      filterArrays(property.type, filters.type) &&
+      filterArrays(property.location, filters.location) &&
       (filters.bedrooms === null || property.bedrooms >= filters.bedrooms) &&
       (filters.bathrooms === null || property.bathrooms >= filters.bathrooms) &&
       (filters.minPrice === null || property.price >= filters.minPrice) &&
