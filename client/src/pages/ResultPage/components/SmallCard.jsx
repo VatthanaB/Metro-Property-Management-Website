@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // SmallCard component to display a small property card
 const SmallCard = (property) => {
   return (
-    <div className="w-80 h-60 rounded-xl overflow-hidden shadow-xl m-2 space-y-2">
+    <div className="w-1/3 h-60 rounded-xl overflow-hidden shadow-xl m-2 space-y-2">
       {/* Link to the property details page */}
       <Link to={`/property/${property._id}`}>
         {/* Property image */}

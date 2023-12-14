@@ -20,10 +20,22 @@ const ResultPage = () => {
   console.log(data);
   const { filters, updateFilters } = useFilters();
 
+  const [resultNumber, setResultNumber] = useState(0);
+
+  const handleSortChange = (order) => {
+    sortData(order);
+  };
+  const sortData = (order) => {
+    const sortedData = [...propertiesToDisplay].sort((a, b) => {
+      return order === "asc" ? a.price - b.price : b.price - a.price;
+    });
+    setPropertiesToDisplay(sortedData);
+  };
   // UseEffect to filter data based on filters and update propertiesToDisplay
   useEffect(() => {
     const filteredData = filterData(data, filters);
     setPropertiesToDisplay(filteredData);
+    setResultNumber(filteredData.length);
   }, [data, filters, updateFilters]);
 
   // Use the pagination utility to manage pagination logic
@@ -32,10 +44,10 @@ const ResultPage = () => {
 
   // Return JSX to render the component
   return (
-    <div className="flex justify-center items-center mt-10 w-full">
-      <div>
+    <div className="flex justify-center items-center mt-10 ">
+      <div className="w-3/4">
         {/* Header */}
-        <Header />
+        <Header onSortChange={handleSortChange} resultNumber={resultNumber} />
         {/* Display filtered properties */}
         <div className="flex flex-col space-y-5">
           {currentItems.map((property) => (
