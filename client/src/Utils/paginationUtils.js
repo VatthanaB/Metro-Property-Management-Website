@@ -52,3 +52,28 @@ export const usePagination = (data, itemsPerPage = 3) => {
     scrollToTop,
   };
 };
+
+// Function to calculate displayed page numbers
+export const calculateDisplayedPageNumbers = (currentPage, allPageNumbers) => {
+  const maxDisplayedPages = 4;
+  const halfMaxDisplayedPages = Math.floor(maxDisplayedPages / 2);
+
+  if (allPageNumbers.length <= maxDisplayedPages) {
+    return allPageNumbers;
+  }
+
+  let startPage = Math.max(currentPage - halfMaxDisplayedPages, 1);
+  let endPage = Math.min(
+    startPage + maxDisplayedPages - 1,
+    allPageNumbers.length
+  );
+
+  if (endPage - startPage + 1 < maxDisplayedPages) {
+    startPage = Math.max(endPage - maxDisplayedPages + 1, 1);
+  }
+
+  return Array.from(
+    { length: endPage - startPage + 1 },
+    (_, index) => startPage + index
+  );
+};
