@@ -8,8 +8,8 @@ const FiltersContext = createContext();
 export const FiltersProvider = ({ children }) => {
   // Initial state for filters
   const initialFilters = {
-    type: "",
-    location: "",
+    type: [],
+    location: [],
     bedrooms: null,
     bathrooms: null,
     minPrice: null,
