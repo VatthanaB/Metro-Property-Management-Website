@@ -2,6 +2,7 @@
 import Header from "./components/Header.jsx";
 import BackToTopButton from "./components/BackToTopButton.jsx";
 import PaginationControls from "./components/PaginationControls.jsx";
+import SimilarProperty from "./components/SimilarProperty.jsx";
 import { useRouteLoaderData } from "react-router-dom";
 import PropertyCard from "./components/PropertyCard";
 import { filterData } from "../../Utils/filteringHandler.js";
@@ -31,7 +32,7 @@ const ResultPage = () => {
 
   // Return JSX to render the component
   return (
-    <div className="flex justify-center items-center mt-10">
+    <div className="flex justify-center items-center mt-10 w-full">
       <div>
         {/* Header */}
         <Header />
@@ -41,6 +42,8 @@ const ResultPage = () => {
             <PropertyCard key={property.id} {...property} />
           ))}
         </div>
+        {/* Similar property display */}
+        <SimilarProperty data={data} />
         {/* Back to Top Button */}
         <BackToTopButton scrollToTop={scrollToTop} />
         {/* Pagination Numbers */}
