@@ -28,7 +28,9 @@ const PaginationControls = ({ currentPage, pageNumbers, handleClick }) => {
           className={`cursor-pointer px-4 py-2 transition duration-300 ease-in-out ${
             number === currentPage ? "text-red-500 " : "text-gray-500 "
           }`}
-          onClick={() => handleClick(number)}
+          onClick={() => {
+            handleClick(number);
+          }}
         >
           {number}
         </div>
