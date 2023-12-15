@@ -11,22 +11,22 @@ import {
 import { Link } from "react-router-dom";
 const SearchForm = () => {
   return (
-    <form className="flex justify-between">
-      <div className="flex-col items-start justify-start w-1/4">
+    <form className="felx-col md:flex justify-between p-5 md:p-0">
+      <div className="flex-col items-start justify-start md:w-1/4">
         <LocationInput />
         <TypeInput />
         <PriceInput />
       </div>
-      <div className="flex-col items-start justify-start w-1/4">
+      <div className="flex-col items-start justify-start md:w-1/4">
         <BedroomInput />
         <BathroomInput />
         <ParkingInput />
       </div>
-      <div className="flex-col items-start justify-start w-1/4">
+      <div className="flex-col items-start justify-start md:w-1/4">
         <AmenititesInput />
         <VicinityInput />
         <Link to={"/search/results"}>
-          <button className="w-full border bg-red-500 text-white rounded-md h-10 mt-5 ml-5">
+          <button className="w-full border bg-red-500 text-white rounded-md h-10 mt-5 md:ml-5 ">
             Search
           </button>
         </Link>

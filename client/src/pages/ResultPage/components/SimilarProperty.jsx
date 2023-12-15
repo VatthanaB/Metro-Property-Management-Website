@@ -21,7 +21,7 @@ const SimilarProperty = ({ data }) => {
       </p>
 
       {/* Display three SmallCard components for randomly selected properties */}
-      <div className="flex max-w-full items-center">
+      <div className="flex max-w-full items-center overflow-x-auto ">
         {data.slice(currentIndex, currentIndex + 3).map((property) => (
           <SmallCard key={property.id} {...property} />
         ))}

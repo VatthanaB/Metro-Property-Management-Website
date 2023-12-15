@@ -11,11 +11,9 @@ const SearchPage = () => {
   const [propertiesToDisplay, setPropertiesToDisplay] = useState([]);
 
   const data = useRouteLoaderData("root");
-  const [resultNumber, setResultNumber] = useState(0);
 
   useEffect(() => {
     setPropertiesToDisplay(data);
-    setResultNumber(data.length);
   }, [data]);
 
   // Use the pagination utility to manage pagination logic
@@ -24,9 +22,10 @@ const SearchPage = () => {
 
   return (
     <div className="flex justify-center items-center mt-10 ">
-      <div className="w-3/4">
+      <div className="w-full md:w-3/4">
         <SearchForm />
         {/* Display filtered properties */}
+
         <div className="flex flex-col space-y-5">
           {currentItems.map((property) => (
             <PropertyCard key={property.id} {...property} />

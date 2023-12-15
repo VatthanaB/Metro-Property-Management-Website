@@ -18,28 +18,6 @@ export const FiltersProvider = ({ children }) => {
     parking: null,
     vicinity: [],
   };
-  // const initialFilters = {
-  //   type: [],
-  //   location: [],
-  //   bedrooms: null,
-  //   bathrooms: null,
-  //   minPrice: null,
-  //   maxPrice: null,
-  //   amenities: ["Garage"],
-  //   parking: null,
-  //   vicinity: ["Gym", "School District"],
-  // };
-  // const initialFilters = {
-  //   type: "",
-  //   location: "",
-  //   bedrooms: 2,
-  //   bathrooms: 2,
-  //   minPrice: 300,
-  //   maxPrice: 500,
-  //   ameneties: ["Pet Friendly"],
-  //   parking: null,
-  //   vicinity: [],
-  // };
 
   // State to manage filters
   const [filters, setFilters] = useState(initialFilters);

@@ -12,7 +12,7 @@ export default function MainNavigation() {
       href: "/search",
       label: (
         <>
-          <IoSearchSharp className="text-4xl mx-3" /> Rental Property
+          <IoSearchSharp className=" text-4xl mx-3" /> Rental Property
         </>
       ),
     },
@@ -36,9 +36,16 @@ export default function MainNavigation() {
         })}
       >
         <Link to="/">
-          <img className="md:w-48 lg:w-96  " src={MetroLogo}></img>
+          <img className="w-24 md:w-48 lg:w-96  " src={MetroLogo}></img>
         </Link>
-        <ul className="flex space-x-10 md:space-x-10 lg:space-x-30  ml-5 ">
+        <Link
+          to="/search"
+          className=" md:hidden  pl-2 text-base text-gray-100 hover:text-red-500 flex "
+        >
+          <IoSearchSharp className=" text-4xl mx-3   hover:text-red-500" />{" "}
+          Rental Property
+        </Link>
+        <ul className="md:flex space-x-10 hidden  md:space-x-10 lg:space-x-30  ml-5 ">
           {links.map((link) => (
             <NavLink
               className={classNames({
@@ -53,7 +60,10 @@ export default function MainNavigation() {
         </ul>
       </div>
 
-      <Link to="/search/results" className="text-red-600 font-bold text-2xl ">
+      <Link
+        to="/search/results"
+        className="text-red-600 font-bold text-2xl hidden lg:block "
+      >
         09 391 4642
       </Link>
     </nav>

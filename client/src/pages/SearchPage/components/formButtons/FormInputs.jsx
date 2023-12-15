@@ -4,7 +4,7 @@ import { PiHouseLine } from "react-icons/pi";
 import { FaDollarSign } from "react-icons/fa";
 import { MdOutlineBed } from "react-icons/md";
 import { MdOutlineShower } from "react-icons/md";
-
+import { GiHomeGarage } from "react-icons/gi";
 import { PiBuildingsFill } from "react-icons/pi";
 import { PiFlowerTulipBold } from "react-icons/pi";
 import { useFilters } from "../../../../Utils/contexts/FilterManagementContext";
@@ -219,7 +219,7 @@ export const ParkingInput = () => {
   return (
     <div className={mainDivClass}>
       <label className={iconsClass}>
-        <MdOutlineShower />
+        <GiHomeGarage />
       </label>
 
       <Select
