@@ -53,7 +53,7 @@ const Homepage = () => {
           })}
         >
           <Link to="/">
-            <img className="md:w-48 lg:w-96  " src={MetroLogo}></img>
+            <img className="md:w-48 lg:w-96 " src={MetroLogo}></img>
           </Link>
           <ul className="flex space-x-10 md:space-x-10 lg:space-x-40 ml-10">
             {links.map((link) => (

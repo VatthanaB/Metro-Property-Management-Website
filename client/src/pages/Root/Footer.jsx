@@ -61,9 +61,9 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white my-4 max-w-full"></div>
-      <div className="flex justify-center items-center ">
-        <p className="text-white font-light text-sm">
-          © 2021 Metro Property Management. All rights reserved.
+      <div className="flex justify-evenly items-center ">
+        <p className="text-white font-light text-base pr-80 mr-40 my-5">
+          © 2023 Metro Property Management.
         </p>
       </div>
     </footer>

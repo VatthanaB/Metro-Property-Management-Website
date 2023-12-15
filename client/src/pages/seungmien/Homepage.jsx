@@ -1,7 +1,15 @@
+import Awards from "./Awards";
+import Banner from "./Banner";
+import ClientSay from "./ClientSay";
+import Services from "./Services";
+
 const Homepage = () => {
   return (
     <div>
-      <h1>Homepage</h1>
+      <Banner />
+      <Services />
+      <ClientSay />
+      <Awards />
     </div>
   );
 };
