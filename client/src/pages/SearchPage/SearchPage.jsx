@@ -10,6 +10,7 @@ import { usePagination } from "../../Utils/paginationUtils.js";
 const SearchPage = () => {
   const [propertiesToDisplay, setPropertiesToDisplay] = useState([]);
 
+  // Fetch route loader data and filters using useRouteLoaderData hook
   const data = useRouteLoaderData("root");
 
   useEffect(() => {
