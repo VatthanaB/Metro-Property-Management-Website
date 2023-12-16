@@ -27,8 +27,8 @@ jobs:
           # Assuming your server project uses a package manager like npm or yarn
           npm install
 
-          - name: Download client artifacts
-          uses: actions/download-artifact@v2
-          with:
-            name: client-artifacts
-            path: client-coverage
+      - name: Download client artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: client-artifacts
+          path: client-coverage
