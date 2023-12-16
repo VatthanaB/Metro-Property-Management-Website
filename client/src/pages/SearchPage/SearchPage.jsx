@@ -6,7 +6,7 @@ import SimilarProperty from "../ResultPage/components/SimilarProperty";
 import BackToTopButton from "../ResultPage/components/BackToTopButton";
 import PaginationControls from "../ResultPage/components/PaginationControls";
 import { usePagination } from "../../Utils/paginationUtils.js";
-
+import { Link } from "react-router-dom";
 const SearchPage = () => {
   const [propertiesToDisplay, setPropertiesToDisplay] = useState([]);
 
@@ -24,6 +24,9 @@ const SearchPage = () => {
   return (
     <div className="flex justify-center items-center mt-10 ">
       <div className="w-full md:w-3/4">
+        <h1 className="text-gray-500 text-base md:text-lg pl-8 mb-10 ">
+          <Link to="/">Home Page</Link> {">"} Rental Properties
+        </h1>
         <SearchForm />
         {/* Display filtered properties */}
 

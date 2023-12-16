@@ -35,7 +35,7 @@ export const filterData = (data, filters) => {
       (filters.minPrice === null || property.price >= filters.minPrice) &&
       (filters.maxPrice === null || property.price <= filters.maxPrice) &&
       (filters.parking === null || property.parking === filters.parking) &&
-      filterArrays(property.ameneties, filters.amenities) &&
+      filterArrays(property.amenities, filters.amenities) &&
       filterArrays(property.vicinity, filters.vicinity)
     );
   });

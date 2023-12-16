@@ -90,7 +90,7 @@ const PropertyCard = (property) => {
         <div className="flex space-x-10 justify-start items-center">
           <p className="text-xl">Amenities</p>
           <ul className="flex space-x-3 font-extralight">
-            {property.ameneties.map((amenity, index) => (
+            {property.amenities.map((amenity, index) => (
               <li
                 className="rounded-3xl px-2 py-1 border-2 border-gray-300 self-center"
                 key={index}

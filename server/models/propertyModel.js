@@ -38,7 +38,7 @@ const propeertySchema = new mongoose.Schema({
     required: true,
   },
 
-  ameneties: {
+  amenities: {
     type: [String],
     required: false,
   },

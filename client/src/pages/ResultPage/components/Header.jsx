@@ -2,6 +2,7 @@
 import SortComponent from "./SortComponent";
 import { useFilters } from "../../../Utils/contexts/FilterManagementContext";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 // Define the Header component.
 // eslint-disable-next-line react/prop-types
@@ -45,7 +46,9 @@ const Header = ({ onSortChange, resultNumber }) => {
     <>
       {/* Displaying a heading indicating the current page hierarchy. */}
       <h1 className="text-gray-500 text-base md:text-lg pl-8 mb-10 ">
-        Home Page {">"} Rental Properties {">"} Search Results
+        <Link to="/">Home Page</Link> {">"}{" "}
+        <Link to="/search">Rental Properties </Link>
+        {">"} Search Results
       </h1>
 
       {/* Displaying filter options for amenities and vicinity. */}

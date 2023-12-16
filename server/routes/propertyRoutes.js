@@ -31,7 +31,7 @@ router.post("/add", async (req, res) => {
       bedrooms,
       bathrooms,
       parking,
-      ameneties,
+      amenities,
       vicinity,
     } = req.body;
 
@@ -50,7 +50,7 @@ router.post("/add", async (req, res) => {
       bedrooms,
       bathrooms,
       parking,
-      ameneties,
+      amenities,
       vicinity,
     });
 
