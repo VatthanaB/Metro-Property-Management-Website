@@ -2,8 +2,71 @@ import { Link, NavLink } from "react-router-dom";
 import MetroLogo from "../../assets/images/MetroLogo.png";
 import { IoSearchSharp } from "react-icons/io5";
 import classNames from "classnames";
-
+import { Menu } from "@headlessui/react";
+import { GiHamburgerMenu } from "react-icons/gi";
 export default function MainNavigation() {
+  // Desktop version
+  const DesktopMenu = () => (
+    <ul className="md:flex space-x-10 hidden md:space-x-10 lg:space-x-30 ml-5">
+      {links.map((link) => (
+        <NavLink
+          className={classNames({
+            "text-xl text-gray-100 hover:text-red-500 flex ": true,
+          })}
+          key={link.href}
+          to={link.href}
+        >
+          {link.label}
+        </NavLink>
+      ))}
+    </ul>
+  );
+
+  // Mobile version
+  const MobileMenu = () => (
+    <div className="relative">
+      <Menu>
+        <Menu.Button>
+          <GiHamburgerMenu className="text-4xl text-white " />
+        </Menu.Button>
+        <Menu.Items className="absolute -right-4 top-16 w-40 bg-black bg-opacity-80 space-y-2 text-xl rounded flex-col items-center pt-3">
+          {linksMobile.map((link) =>
+            link.href === "/results" ? (
+              <Menu.Item key={link.href}>
+                {({ active }) => (
+                  <a
+                    className={`${
+                      active ? "bg-blue-500 text-red-500" : "text-red-500"
+                    } flex rounded-md px-4 pb-3`}
+                    href="tel:09 391 4642"
+                  >
+                    {link.label}
+                  </a>
+                )}
+              </Menu.Item>
+            ) : (
+              <Menu.Item key={link.href}>
+                {({ active }) => (
+                  <>
+                    <NavLink
+                      className={`${
+                        active ? "bg-blue-500 text-red-500" : "text-white"
+                      } flex rounded-md px-4`}
+                      to={link.href}
+                    >
+                      {link.label}
+                    </NavLink>
+                    <hr className="text-white p-0" />
+                  </>
+                )}
+              </Menu.Item>
+            )
+          )}
+        </Menu.Items>
+      </Menu>
+    </div>
+  );
+
   // const location = useLocation();
   // const currentPath = location.pathname;
   // console.log("currentPath", currentPath);
@@ -20,6 +83,12 @@ export default function MainNavigation() {
     { href: "/news", label: "News" },
     { href: "/about", label: "About us" },
   ];
+  const linksMobile = [
+    { href: "/services", label: "Our Service" },
+    { href: "/news", label: "News" },
+    { href: "/about", label: "About us" },
+    { href: "/results", label: "09 391 4642" },
+  ];
   return (
     <nav
       className={classNames({
@@ -32,7 +101,7 @@ export default function MainNavigation() {
     >
       <div
         className={classNames({
-          "flex justify-evenly items-center ": true,
+          "flex justify-evenly md:justify-between items-center w-full ": true,
         })}
       >
         <Link to="/">
@@ -45,24 +114,22 @@ export default function MainNavigation() {
           <IoSearchSharp className=" text-4xl mx-3   hover:text-red-500" />{" "}
           Rental Property
         </Link>
-        <ul className="md:flex space-x-10 hidden  md:space-x-10 lg:space-x-30  ml-5 ">
-          {links.map((link) => (
-            <NavLink
-              className={classNames({
-                "text-xl text-gray-100 hover:text-red-500 flex ": true,
-              })}
-              key={link.href}
-              to={link.href}
-            >
-              {link.label}
-            </NavLink>
-          ))}
-        </ul>
+        <div>
+          {/* Render the desktop menu on medium screens and larger */}
+          <div className="md:block hidden">
+            <DesktopMenu />
+          </div>
+
+          {/* Render the mobile menu on small screens */}
+          <div className="md:hidden">
+            <MobileMenu />
+          </div>
+        </div>
       </div>
 
       <Link
         to="/search/results"
-        className="text-red-600 font-bold text-2xl hidden lg:block "
+        className="text-red-600 w-48 font-bold text-2xl hidden lg:block "
       >
         09 391 4642
       </Link>

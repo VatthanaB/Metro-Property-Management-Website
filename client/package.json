@@ -11,6 +11,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "axios": "^1.6.2",
     "classnames": "^2.3.2",
     "prop-types": "^15.8.1",

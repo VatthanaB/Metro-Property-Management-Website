@@ -18,6 +18,7 @@ const ResultPage = () => {
 
   // Fetch route loader data and filters using custom hooks
   const data = useRouteLoaderData("root");
+  console.log(data);
   const { filters, updateFilters } = useFilters();
   const [resultNumber, setResultNumber] = useState(0);
 

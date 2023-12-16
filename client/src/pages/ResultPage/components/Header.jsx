@@ -44,7 +44,7 @@ const Header = ({ onSortChange, resultNumber }) => {
   return (
     <>
       {/* Displaying a heading indicating the current page hierarchy. */}
-      <h1 className="text-gray-500 text-base md:text-lg ml-8 mb-10 ">
+      <h1 className="text-gray-500 text-base md:text-lg pl-8 mb-10 ">
         Home Page {">"} Rental Properties {">"} Search Results
       </h1>
 

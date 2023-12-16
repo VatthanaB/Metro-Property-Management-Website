@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const PropertyCard = (property) => {
   // Check if the screen size is mobile
   return (
-    <div className="w-full rounded-xl  pb-5 overflow-hidden shadow-xl md:m-6 text-gray-600">
+    <div className="w-full rounded md:rounded-xl  pb-5 overflow-hidden shadow-xl md:my-6 text-gray-600">
       {/* Address and icons */}
       <p className=" hidden md:flex text-2xl pl-5 pb-3 space-x-2">
         <MdOutlineLocationOn className="text-red-600" />
@@ -22,7 +22,7 @@ const PropertyCard = (property) => {
       <div className="relative text-red-600 text-6xl">
         <Link to={`/property/${property._id}`}>
           <img
-            className="w-full h-[450px]  md:h-[400px] object-cover rounded-t-xl"
+            className="w-full h-[450px]  md:h-[400px] object-cover  rounded md:rounded-t-xl"
             src={`/images/${property.image}.jpeg`}
             alt={property.type}
           />

@@ -1,5 +1,5 @@
 const PropertyPage = () => {
-  return <div> Joshua's PropertyPage !!!!!!!</div>;
+  return <div> Joshua PropertyPage !!!!!!!</div>;
 };
 
 export default PropertyPage;
