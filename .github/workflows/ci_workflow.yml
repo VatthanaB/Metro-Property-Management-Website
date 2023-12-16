@@ -25,6 +25,5 @@ jobs:
         run: |
           cd server
           # Assuming your server project uses a package manager like npm or yarn
-          npm install  # or yarn install
-          npm run build  # or yarn build
-          npm test  # or yarn test
+          npm install  
+          npm test
