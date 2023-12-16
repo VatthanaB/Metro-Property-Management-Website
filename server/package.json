@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha routes/propertyRoute.test.js",
     "start": "node server.js",
     "dev": "nodemon server.js",
     "seed": "node ./cli/cli.js import ./cli/property.json Mission-Ready-M5 properties "
@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
     "commander": "^11.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -20,5 +22,9 @@
     "fs": "^0.0.1-security",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
   }
 }

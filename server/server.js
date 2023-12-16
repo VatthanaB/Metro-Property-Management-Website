@@ -8,8 +8,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 // Import routes
-const greetingRoutes = require("./routes/vatthana/greetingRoutes");
-const propertyRoutes = require("./routes/vatthana/propertyRoutes");
+const greetingRoutes = require("./routes/greetingRoutes");
+const propertyRoutes = require("./routes/propertyRoutes");
 
 // Setup express app
 const app = express();
@@ -45,6 +45,8 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+module.exports = server;

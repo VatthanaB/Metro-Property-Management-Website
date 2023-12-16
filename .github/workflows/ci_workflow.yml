@@ -1,0 +1,30 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Build and Test Client
+        run: |
+          cd client
+          # Assuming your client project uses a package manager like npm or yarn
+          npm install 
+          npm run build 
+          npm test
+
+      - name: Build and Test Server
+        run: |
+          cd server
+          # Assuming your server project uses a package manager like npm or yarn
+          npm install  # or yarn install
+          npm run build  # or yarn build
+          npm test  # or yarn test

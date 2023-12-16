@@ -7,11 +7,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function MainNavigation() {
   // Desktop version
   const DesktopMenu = () => (
-    <ul className="md:flex space-x-10 hidden md:space-x-10 lg:space-x-30 ml-5">
+    <ul className="md:flex hidden md:space-x-16 lg:space-x-30 ml-5">
       {links.map((link) => (
         <NavLink
           className={classNames({
-            "text-xl text-gray-100 hover:text-red-500 flex ": true,
+            "text-2xl text-gray-100 hover:text-red-500 flex ": true,
           })}
           key={link.href}
           to={link.href}
@@ -92,26 +92,27 @@ export default function MainNavigation() {
   return (
     <nav
       className={classNames({
-        "flex justify-between space-x-6 py-5 px-10 h-30 items-center z-50 sticky top-0 font-medium": true,
+        "flex  space-x-6 py-5 px-5 md:px-10 h-30  items-center z-50 sticky top-0 font-medium": true,
         "pr-5 lg:pr-28": true,
         "bg-black bg-opacity-80": true,
         // " bg-metro-grey": currentPath !== "/",
         // hidden: currentPath === "/",
       })}
     >
+      {" "}
+      <Link to="/">
+        <img className="w-32 md:w-48 lg:w-96  " src={MetroLogo}></img>
+      </Link>
       <div
         className={classNames({
           "flex justify-evenly md:justify-between items-center w-full ": true,
         })}
       >
-        <Link to="/">
-          <img className="w-24 md:w-48 lg:w-96  " src={MetroLogo}></img>
-        </Link>
         <Link
           to="/search"
-          className=" md:hidden  pl-2 text-base text-gray-100 hover:text-red-500 flex "
+          className=" md:hidden text-xl md:text-base  min-w-fit   text-gray-100 hover:text-red-500 flex mr-12 "
         >
-          <IoSearchSharp className=" text-4xl mx-3   hover:text-red-500" />{" "}
+          <IoSearchSharp className=" text-4xl mx-1 md:mx-3   hover:text-red-500" />{" "}
           Rental Property
         </Link>
         <div>
@@ -126,10 +127,9 @@ export default function MainNavigation() {
           </div>
         </div>
       </div>
-
       <Link
         to="/search/results"
-        className="text-red-600 w-48 font-bold text-2xl hidden lg:block "
+        className="text-red-600 min-w-fit font-bold text-2xl hidden lg:flex justify-end "
       >
         09 391 4642
       </Link>

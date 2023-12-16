@@ -1,6 +1,6 @@
 // server/routes/greetingRoutes.js
 const express = require("express");
-const Greeting = require("../../models/greetingModel");
+const Greeting = require("../models/greetingModel");
 
 const router = express.Router();
 

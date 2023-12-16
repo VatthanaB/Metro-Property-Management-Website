@@ -14,15 +14,21 @@ const SimilarProperty = ({ data }) => {
 
   // Render the SimilarProperty component
   return (
-    <div className="ml-5 my-5 w-full">
+    <div className=" my-5 w-full flex-col items-center justify-center">
       {/* Heading for similar properties */}
       <p className="text-3xl text-gray-600 my-10 pl-2 font-light">
         Similar Properties
       </p>
 
       {/* Display three SmallCard components for randomly selected properties */}
-      <div className="flex max-w-full items-center overflow-x-auto ">
+      <div className="hidden md:flex max-w-full justify-center items-center  ">
         {data.slice(currentIndex, currentIndex + 3).map((property) => (
+          <SmallCard key={property.id} {...property} />
+        ))}
+      </div>
+      {/* Display three SmallCard components for randomly selected properties MOBILE */}
+      <div className="flex md:hidden w-full justify-center items-center ">
+        {data.slice(currentIndex, currentIndex + 1).map((property) => (
           <SmallCard key={property.id} {...property} />
         ))}
       </div>
