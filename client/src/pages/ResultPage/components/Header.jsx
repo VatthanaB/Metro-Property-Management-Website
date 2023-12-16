@@ -27,7 +27,7 @@ const Header = ({ onSortChange, resultNumber }) => {
       "Parks",
       "Gym",
       "Childcare",
-      "Restaurant",
+      "Restaurants",
       "Shops",
     ],
   };
@@ -52,10 +52,10 @@ const Header = ({ onSortChange, resultNumber }) => {
       </h1>
 
       {/* Displaying filter options for amenities and vicinity. */}
-      <div className="md:pl-5 space-y-4 text-gray-500 font-light mb-10 text-xs md:text-base ">
+      <div className=" pl-2 md:pl-5 space-y-4 text-gray-500 font-normal md:font-light mb-10 text-xs md:text-base ">
         {/* Amenities section */}
-        <div className="flex space-x-10 justify-start items-center">
-          <p className="">Amenities</p>
+        <div className="flex space-x-10 justify-start items-center ">
+          <p className="text-base md:text-lg">Amenities</p>
           <ul className="flex space-x-1 md:space-x-3 font-extralight overflow-x-auto no-scrollbar">
             {/* Mapping over amenity options to create filter buttons. */}
             {options.amenities.map((amenity, index) => (
@@ -76,7 +76,7 @@ const Header = ({ onSortChange, resultNumber }) => {
 
         {/* Vicinity section */}
         <div className="flex space-x-10 justify-start items-center">
-          <p className="">Vicinity</p>
+          <p className="text-base md:text-lg">Vicinity</p>
           <ul className="flex space-x-3 font-extralight overflow-x-auto no-scrollbar">
             {/* Mapping over vicinity options to create filter buttons. */}
             {options.vicinity.map((vicinity, index) => (

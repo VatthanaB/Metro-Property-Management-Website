@@ -1,15 +1,23 @@
+/* eslint-disable react/prop-types */
 import { MdOutlineLocationOn } from "react-icons/md";
 import { FaDollarSign } from "react-icons/fa";
 import { MdOutlineBed } from "react-icons/md";
 import { MdOutlineShower } from "react-icons/md";
 import { GiHomeGarage } from "react-icons/gi";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import {
+  CustomNextArrow,
+  CustomPrevArrow,
+} from "./propertyCardArrows/Slidearrows";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // PropertyCard component to display property details
 const PropertyCard = (property) => {
   // Check if the screen size is mobile
+
+  const carrouselImages = [property.image, "interior", "bedroom", "pool"];
   return (
     <div className="w-full rounded md:rounded-xl  pb-5 overflow-hidden shadow-xl md:my-6 text-gray-600">
       {/* Address and icons */}
@@ -20,19 +28,25 @@ const PropertyCard = (property) => {
 
       {/* Image and Arrows */}
       <div className="relative text-red-600 text-6xl">
-        <Link to={`/property/${property._id}`}>
-          <img
-            className="w-full h-[450px]  md:h-[400px] object-cover  rounded md:rounded-t-xl"
-            src={`/images/property/${property.image}.jpeg`}
-            alt={property.type}
-          />
-        </Link>
-        <div className="absolute left-0 top-1/2 md:top-2/3 transform -translate-y-1/2 w-8 h-8">
-          <IoIosArrowBack className="bg-slate-300 bg-opacity-60" />
-        </div>
-        <div className="absolute right-0 top-1/2 md:top-2/3 transform -translate-y-1/2 w-8 h-8 mr-7">
-          <IoIosArrowForward className="bg-slate-300 bg-opacity-60" />
-        </div>
+        <Slider
+          dots={false}
+          infinite={true}
+          speed={650}
+          slidesToShow={1}
+          slidesToScroll={1}
+          nextArrow={<CustomNextArrow />}
+          prevArrow={<CustomPrevArrow />}
+        >
+          {carrouselImages.map((image, index) => (
+            <Link key={index} to={`/property/${property._id}`}>
+              <img
+                className="w-full h-[450px] md:h-[400px] object-cover rounded md:rounded-t-xl"
+                src={`/images/property/${image}.jpeg`}
+                alt={property.type}
+              />
+            </Link>
+          ))}
+        </Slider>
       </div>
 
       {/* Price / Bed / Shower / Garage */}

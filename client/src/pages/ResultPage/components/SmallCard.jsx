@@ -12,7 +12,7 @@ const SmallCard = (property) => {
         {/* Property image */}
         <img
           className="w-full h-32 object-cover rounded-t-xl"
-          src={`/images/${property.image}.jpeg`}
+          src={`/images/property/${property.image}.jpeg`}
           alt={property.type}
         />
       </Link>

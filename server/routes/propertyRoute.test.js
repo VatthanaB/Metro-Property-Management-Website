@@ -9,14 +9,13 @@ const expect = chai.expect;
 
 // Test suite for Property routes
 describe("Property Routes", () => {
-  // Clear the database before running tests
+  // Connect to the database before running tests
   before((done) => {
     mongoose.connect("mongodb://localhost:27017/Mission-Ready-M5", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
     mongoose.connection.once("open", () => {
-      mongoose.connection.db.dropDatabase();
       done();
     });
   });

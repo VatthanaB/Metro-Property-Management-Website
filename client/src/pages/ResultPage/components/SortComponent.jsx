@@ -20,7 +20,7 @@ const SortComponent = ({ onSortChange }) => {
   return (
     <Select
       // Apply styling to the Select component, specifying a quarter of the width.
-      className="w-4/5 md:w-1/4"
+      className="w-4/5 md:w-1/4 ml-1"
       // Provide sorting options to the Select component.
       options={options}
       // Attach the 'handleChange' function to the change event of the Select component.

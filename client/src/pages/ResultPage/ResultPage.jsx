@@ -5,7 +5,7 @@ import Header from "./components/Header.jsx";
 import BackToTopButton from "./components/BackToTopButton.jsx";
 import PaginationControls from "./components/PaginationControls.jsx";
 import SimilarProperty from "./components/SimilarProperty.jsx";
-import PropertyCard from "./components/PropertyCard";
+import PropertyCard from "./components/PropertyCardCa";
 import { filterData } from "../../Utils/filteringHandler.js";
 import { useFilters } from "../../Utils/contexts/FilterManagementContext";
 import { usePagination } from "../../Utils/paginationUtils.js"; // Import the pagination utility

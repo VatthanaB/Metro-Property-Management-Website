@@ -1,7 +1,7 @@
 import SearchForm from "./components/SearchForm";
 import { useRouteLoaderData } from "react-router-dom";
 import { useState, useEffect } from "react";
-import PropertyCard from "../ResultPage/components/PropertyCard";
+import PropertyCard from "../ResultPage/components/PropertyCardCa";
 import SimilarProperty from "../ResultPage/components/SimilarProperty";
 import BackToTopButton from "../ResultPage/components/BackToTopButton";
 import PaginationControls from "../ResultPage/components/PaginationControls";
