@@ -3,7 +3,7 @@ name: CI Workflow
 on:
   push:
     branches:
-      - vatthana
+      - main
 
 jobs:
   build-and-test:
