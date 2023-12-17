@@ -14,7 +14,7 @@ const Header = ({ onSortChange, resultNumber }) => {
   const options = {
     amenities: [
       "Pet Friendly",
-      "Allow Smoking",
+      "Allows Smoking",
       "Furnished",
       "MultiStory",
       "Garage",
