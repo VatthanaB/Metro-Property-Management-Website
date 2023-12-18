@@ -12,6 +12,7 @@
     "test": "jest --coverage"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@material-tailwind/react": "^2.1.7",
     "axios": "^1.6.2",
     "classnames": "^2.3.2",
