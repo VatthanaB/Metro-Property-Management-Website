@@ -15,6 +15,7 @@ const SearchPage = () => {
 
   useEffect(() => {
     setPropertiesToDisplay(data);
+    console.log(data);
   }, [data]);
 
   // Use the pagination utility to manage pagination logic

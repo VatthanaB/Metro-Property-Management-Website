@@ -6,6 +6,7 @@ import RootLayout from "./pages/Root/RootLayout";
 import ResultPage from "./pages/ResultPage/ResultPage";
 import SearchPage from "./pages/SearchPage/SearchPage";
 import PropertyPage from "./pages/PropertyPage/PropertyPage";
+
 const URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 // CSS style for the under construction message with tailwind
 const underConstructionStyle =
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />, // Error page element for the entire application
     id: "root",
     loader: async () => {
+      console.log("fetching data from server");
       // Fetch data for all routes from the server when the application loads
       return fetch(`${URL}/properties/all`);
     },
