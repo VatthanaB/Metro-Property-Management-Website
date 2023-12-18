@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,16 +7,6 @@ import {
   CustomPrevArrow,
 } from "../propertyCardArrows/Slidearrows";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-
-CardCarroussel.propTypes = {
-  carrouselImages: PropTypes.arrayOf(PropTypes.string).isRequired,
-  property: PropTypes.shape({
-    _id: PropTypes.string,
-    type: PropTypes.string,
-    // Add other property attributes here
-  }).isRequired,
-};
 
 const CardCarroussel = ({ carrouselImages, property }) => {
   return (

@@ -8,7 +8,7 @@ import PriceAndAmenities from "./propertCardcomponent/PriceAndAmenities";
 // PropertyCard component to display property details
 const PropertyCard = (property) => {
   // Check if the screen size is mobile
-  const test = "oky";
+
   const carrouselImages = [property.image, "interior", "bedroom", "pool"];
   return (
     <div className="w-full rounded md:rounded-xl  pb-5 overflow-hidden shadow-xl md:my-6 text-gray-600">

@@ -1,20 +1,9 @@
+/* eslint-disable react/prop-types */
 import { FaDollarSign } from "react-icons/fa";
 import { MdOutlineBed } from "react-icons/md";
 import { MdOutlineShower } from "react-icons/md";
 import { GiHomeGarage } from "react-icons/gi";
 import { MdOutlineLocationOn } from "react-icons/md";
-import PropTypes from "prop-types";
-
-PriceAndAmenities.propTypes = {
-  property: PropTypes.shape({
-    address: PropTypes.string,
-    price: PropTypes.number,
-    bedrooms: PropTypes.number,
-    bathrooms: PropTypes.number,
-    parking: PropTypes.number,
-    // Add other property attributes here
-  }).isRequired,
-};
 
 const PriceAndAmenities = ({ property }) => {
   return (
