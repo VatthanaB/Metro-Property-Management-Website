@@ -25,7 +25,7 @@ const PropertyCard = (property) => {
       <PriceAndAmenities property={property} />
 
       {/* Available / Maximum Tenants */}
-      <div className="  md:flex justify-between my-3 text-gray-600 font-normal">
+      <div className="  md:flex justify-between my-3 text-gray-600 font-normal ">
         <div className="md:flex-col md:w-1/2 px-2">
           <div className="flex justify-between w-full px-5">
             <p>Available</p>
