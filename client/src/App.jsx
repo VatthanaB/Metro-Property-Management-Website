@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Homepage from "./pages/HomePage/Homepage";
 import { FiltersProvider } from "./Utils/contexts/FilterManagementContext";
-import Homepage from "./pages/seungmien/Homepage";
+
 import ErrorPage from "./pages/Root/ErrorPage";
 import RootLayout from "./pages/Root/RootLayout";
 import ResultPage from "./pages/ResultPage/ResultPage";
