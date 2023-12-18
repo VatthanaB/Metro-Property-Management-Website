@@ -8,7 +8,8 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 export default function Footer() {
-  const footerTextStyles = "text-white font-thin text-md  flex items-center ";
+  const footerTextStyles =
+    "text-white font-thin text-sm  md:text-md  flex items-center ";
   return (
     <footer
       className={classNames({
@@ -17,7 +18,7 @@ export default function Footer() {
     >
       <div
         className={classNames({
-          "flex justify-center items-center bg-black  p-10 space-x-40 ": true,
+          "flex justify-center items-center bg-black p-5  md:p-10  space-x-10 md:space-x-40 ": true,
         })}
       >
         <div
@@ -38,8 +39,10 @@ export default function Footer() {
             <IoLocationOutline className="mr-4 text-2xl " />
             Level 33, ANZ Centre, 23-29 Albert Street, Auckland CBD 1010
           </p>
-          <p className="text-white font-light text-xl  ">FOLLOW US</p>
-          <div className="text-red-600 flex space-x-4 text-2xl">
+          <p className="text-white font-light text-base md:text-xl  ">
+            FOLLOW US
+          </p>
+          <div className="text-red-600 flex space-x-6 md:space-x-4 text-xl md:text-2xl">
             <FaFacebookF />
             <RiInstagramFill />
             <FaLinkedinIn /> <FaTwitter />
@@ -60,10 +63,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white my-4 max-w-full"></div>
-      <div className="flex justify-center items-center ">
-        <p className="text-white font-light text-sm">
-          © 2021 Metro Property Management. All rights reserved.
+      <div className="border-t border-white my-4 w-full"></div>
+      <div className="flex justify-center  md:justify-evenly items-center ">
+        <p className="text-white font-light text-base md:pr-80 md:mr-40 my-5">
+          © 2023 Metro Property Management.
         </p>
       </div>
     </footer>

@@ -9,7 +9,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "parking": 2,
-    "ameneties": ["Pet Friendly", "Allows Smoking", "Furnished", "MultiStory"],
+    "amenities": ["Pet Friendly", "Allows Smoking", "Furnished", "MultiStory"],
     "vicinity": ["Public Transport", "Parks", "Childcare", "Restaurants"]
   },
   {
@@ -22,7 +22,7 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "parking": 1,
-    "ameneties": [
+    "amenities": [
       "Pet Friendly",
       "Allows Smoking",
       "MultiStory",
@@ -40,7 +40,7 @@
     "bedrooms": 4,
     "bathrooms": 1,
     "parking": 2,
-    "ameneties": ["Pet Friendly", "Furnished", "MultiStory", "Swimming Pool"],
+    "amenities": ["Pet Friendly", "Furnished", "MultiStory", "Swimming Pool"],
     "vicinity": ["Public Transport", "School District", "Gym", "Childcare"]
   },
   {
@@ -53,7 +53,7 @@
     "bedrooms": 3,
     "bathrooms": 2,
     "parking": 1,
-    "ameneties": ["Furnished", "Garage"],
+    "amenities": ["Furnished", "Garage"],
     "vicinity": ["Public Transport", "School District", "Gym"]
   },
   {
@@ -66,7 +66,7 @@
     "bedrooms": 4,
     "bathrooms": 2,
     "parking": 2,
-    "ameneties": ["Garage", "Central Heating"],
+    "amenities": ["Garage", "Central Heating"],
     "vicinity": ["Childcare"]
   },
   {
@@ -79,7 +79,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "parking": 2,
-    "ameneties": ["Allows Smoking"],
+    "amenities": ["Allows Smoking"],
     "vicinity": ["Childcare", "Restaurants"]
   },
   {
@@ -92,7 +92,7 @@
     "bedrooms": 3,
     "bathrooms": 1,
     "parking": 1,
-    "ameneties": ["Pet Friendly", "MultiStory", "Garage", "Swimming Pool"],
+    "amenities": ["Pet Friendly", "MultiStory", "Garage", "Swimming Pool"],
     "vicinity": ["Shops"]
   },
   {
@@ -105,7 +105,7 @@
     "bedrooms": 1,
     "bathrooms": 3,
     "parking": 4,
-    "ameneties": [
+    "amenities": [
       "Pet Friendly",
       "Allows Smoking",
       "Furnished",
@@ -124,7 +124,7 @@
     "bedrooms": 1,
     "bathrooms": 2,
     "parking": 1,
-    "ameneties": ["Allows Smoking", "Garage"],
+    "amenities": ["Allows Smoking", "Garage"],
     "vicinity": ["School District", "Parks", "Gym", "Shops"]
   },
   {
@@ -137,7 +137,7 @@
     "bedrooms": 3,
     "bathrooms": 1,
     "parking": 3,
-    "ameneties": ["Allows Smoking", "Central Heating", "Swimming Pool"],
+    "amenities": ["Allows Smoking", "Central Heating", "Swimming Pool"],
     "vicinity": ["Childcare", "Shops"]
   },
   {
@@ -150,7 +150,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "parking": 3,
-    "ameneties": ["Pet Friendly", "Allows Smoking", "MultiStory", "Garage"],
+    "amenities": ["Pet Friendly", "Allows Smoking", "MultiStory", "Garage"],
     "vicinity": ["School District", "Childcare", "Shops"]
   },
   {
@@ -163,7 +163,7 @@
     "bedrooms": 3,
     "bathrooms": 1,
     "parking": 3,
-    "ameneties": ["Furnished", "MultiStory", "Garage"],
+    "amenities": ["Furnished", "MultiStory", "Garage"],
     "vicinity": ["Childcare", "Shops"]
   },
   {
@@ -176,7 +176,7 @@
     "bedrooms": 2,
     "bathrooms": 4,
     "parking": 1,
-    "ameneties": ["Pet Friendly", "Allows Smoking", "MultiStory", "Garage"],
+    "amenities": ["Pet Friendly", "Allows Smoking", "MultiStory", "Garage"],
     "vicinity": ["School District", "Childcare", "Shops"]
   },
   {
@@ -189,7 +189,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "parking": 3,
-    "ameneties": ["Pet Friendly", "Furnished", "MultiStory", "Swimming Pool"],
+    "amenities": ["Pet Friendly", "Furnished", "MultiStory", "Swimming Pool"],
     "vicinity": ["Public Transport", "School District", "Gym", "Childcare"]
   },
   {
@@ -202,7 +202,7 @@
     "bedrooms": 3,
     "bathrooms": 1,
     "parking": 3,
-    "ameneties": ["Furnished", "Garage"],
+    "amenities": ["Furnished", "Garage"],
     "vicinity": ["Public Transport", "School District", "Gym", "Shops"]
   },
   {
@@ -215,7 +215,7 @@
     "bedrooms": 3,
     "bathrooms": 4,
     "parking": 2,
-    "ameneties": ["Garage", "Central Heating"],
+    "amenities": ["Garage", "Central Heating"],
     "vicinity": ["Childcare", "Restaurants", "Shops"]
   },
   {
@@ -228,7 +228,7 @@
     "bedrooms": 2,
     "bathrooms": 4,
     "parking": 1,
-    "ameneties": ["Allows Smoking"],
+    "amenities": ["Allows Smoking"],
     "vicinity": ["Childcare", "Restaurants", "Shops"]
   },
   {
@@ -241,7 +241,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "parking": 3,
-    "ameneties": ["Pet Friendly", "MultiStory", "Garage", "Swimming Pool"],
+    "amenities": ["Pet Friendly", "MultiStory", "Garage", "Swimming Pool"],
     "vicinity": ["Parks"]
   },
   {
@@ -254,7 +254,7 @@
     "bedrooms": 2,
     "bathrooms": 4,
     "parking": 1,
-    "ameneties": ["Garage", "Swimming Pool"],
+    "amenities": ["Garage", "Swimming Pool"],
     "vicinity": ["Public Transport", "Childcare"]
   },
 
@@ -268,7 +268,7 @@
     "bedrooms": 1,
     "bathrooms": 3,
     "parking": 4,
-    "ameneties": ["Pet Friendly", "Allows Smoking", "Garage", "Swimming Pool"],
+    "amenities": ["Pet Friendly", "Allows Smoking", "Garage", "Swimming Pool"],
     "vicinity": ["Public Transport", "Childcare"]
   },
   {
@@ -281,7 +281,7 @@
     "bedrooms": 3,
     "bathrooms": 4,
     "parking": 2,
-    "ameneties": [
+    "amenities": [
       "Pet Friendly",
       "Allows Smoking",
       "Furnished",
@@ -301,7 +301,7 @@
     "bedrooms": 2,
     "bathrooms": 4,
     "parking": 1,
-    "ameneties": ["Garage", "Swimming Pool"],
+    "amenities": ["Garage", "Swimming Pool"],
     "vicinity": ["Public Transport", "Childcare"]
   },
 
@@ -315,7 +315,7 @@
     "bedrooms": 1,
     "bathrooms": 3,
     "parking": 4,
-    "ameneties": ["Furnished", "Garage", "Central Heating", "Swimming Pool"],
+    "amenities": ["Furnished", "Garage", "Central Heating", "Swimming Pool"],
     "vicinity": ["Parks", "Gym", "Childcare", "Restaurants", "Shops"]
   },
   {
@@ -328,7 +328,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "parking": 3,
-    "ameneties": ["Furnished", "Garage", "Central Heating"],
+    "amenities": ["Furnished", "Garage", "Central Heating"],
     "vicinity": ["Public Transport", "Gym", "Childcare", "Restaurants", "Shops"]
   },
   {
@@ -341,7 +341,7 @@
     "bedrooms": 3,
     "bathrooms": 1,
     "parking": 3,
-    "ameneties": ["Furnished", "Garage"],
+    "amenities": ["Furnished", "Garage"],
     "vicinity": ["Public Transport", "School District"]
   },
   {
@@ -354,7 +354,7 @@
     "bedrooms": 1,
     "bathrooms": 3,
     "parking": 4,
-    "ameneties": ["Pet Friendly", "Allows Smoking", "Garage", "Swimming Pool"],
+    "amenities": ["Pet Friendly", "Allows Smoking", "Garage", "Swimming Pool"],
     "vicinity": ["Public Transport", "Childcare"]
   },
   {
@@ -367,7 +367,7 @@
     "bedrooms": 3,
     "bathrooms": 4,
     "parking": 2,
-    "ameneties": ["Furnished", "Garage"],
+    "amenities": ["Furnished", "Garage"],
     "vicinity": ["Shops"]
   },
   {
@@ -380,7 +380,7 @@
     "bedrooms": 2,
     "bathrooms": 4,
     "parking": 1,
-    "ameneties": ["Allows Smoking", "Furnished", "Swimming Pool"],
+    "amenities": ["Allows Smoking", "Furnished", "Swimming Pool"],
     "vicinity": [
       "Public Transport",
       "School District",
@@ -400,7 +400,7 @@
     "bedrooms": 3,
     "bathrooms": 4,
     "parking": 2,
-    "ameneties": [
+    "amenities": [
       "Pet Friendly",
       "Allows Smoking",
       "Furnished",
@@ -420,7 +420,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "parking": 3,
-    "ameneties": [
+    "amenities": [
       "Pet Friendly",
       "Allows Smoking",
       "Furnished",
@@ -439,7 +439,103 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "parking": 1,
-    "ameneties": ["Allows Smoking", "Garage"],
+    "amenities": ["Allows Smoking", "Garage"],
     "vicinity": ["Childcare", "Restaurants"]
+  },
+  {
+    "image": "House",
+    "address": "456 Lakeside Avenue, Waiheke Island, North Auckland",
+    "type": "House",
+    "location": "North Auckland",
+    "description": "Island Paradise: A 3-bedroom house on Waiheke Island with panoramic sea views. Spacious deck, modern kitchen, and a serene atmosphere.",
+    "price": 750,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "parking": 2,
+    "amenities": ["Pet Friendly", "Furnished", "MultiStory", "Swimming Pool"],
+    "vicinity": ["Public Transport", "Beaches", "Cafes", "Nature Trails"]
+  },
+  {
+    "image": "Apartment",
+    "address": "789 Riverside Drive, Silverdale, North Auckland",
+    "type": "Apartment",
+    "location": "North Auckland",
+    "description": "Riverside Retreat: A 1-bedroom apartment in Silverdale overlooking the river. Modern amenities, secure building, and close to shopping malls.",
+    "price": 520,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "parking": 1,
+    "amenities": ["Furnished", "Garage", "Swimming Pool"],
+    "vicinity": ["Public Transport", "Restaurants", "Shopping Malls"]
+  },
+  {
+    "image": "Unit",
+    "address": "101 Sunset Place, Maraetai, East Auckland",
+    "type": "Unit",
+    "location": "East Auckland",
+    "description": "Sunset Bliss: A 2-bedroom unit in Maraetai with stunning sunset views. Private garden, close to beaches, and a peaceful neighborhood.",
+    "price": 480,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "parking": 1,
+    "amenities": ["Pet Friendly", "Allows Smoking"],
+    "vicinity": ["Beaches", "Parks", "Cafes"]
+  },
+  {
+    "image": "Townhouse",
+    "address": "123 Maplewood Drive, Bucklands Beach, East Auckland",
+    "type": "Townhouse",
+    "location": "East Auckland",
+    "description": "Bayside Living: A 3-bedroom townhouse in Bucklands Beach with a bayside location. Modern design, spacious living areas, and a private courtyard.",
+    "price": 650,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "parking": 2,
+    "amenities": ["Garage", "Central Heating"],
+    "vicinity": [
+      "Beaches",
+      "Public Transport",
+      "School District",
+      "Restaurants"
+    ]
+  },
+  {
+    "image": "House",
+    "address": "456 Meadowview Lane, Kumeu, West Auckland",
+    "type": "House",
+    "location": "West Auckland",
+    "description": "Rural Escape: A 4-bedroom house in Kumeu with a spacious yard. Ideal for those seeking a peaceful rural lifestyle close to vineyards.",
+    "price": 680,
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "parking": 3,
+    "amenities": ["Pet Friendly", "Furnished", "MultiStory"],
+    "vicinity": ["Vineyards", "Nature Trails", "Shops"]
+  },
+  {
+    "image": "Apartment",
+    "address": "789 Lakeshore Drive, Helensville, North Auckland",
+    "type": "Apartment",
+    "location": "North Auckland",
+    "description": "Lakeside Living: A 2-bedroom apartment in Helensville with serene lakeside views. Modern amenities, secure building, and close to local attractions.",
+    "price": 590,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "parking": 1,
+    "amenities": ["Furnished", "Garage", "Swimming Pool"],
+    "vicinity": ["Public Transport", "Nature Trails", "Local Attractions"]
+  },
+  {
+    "image": "Unit",
+    "address": "101 Mountainview Terrace, Waitakere, West Auckland",
+    "type": "Unit",
+    "location": "West Auckland",
+    "description": "Mountain Retreat: A 3-bedroom unit in Waitakere with mountain views. Features a private garden and proximity to hiking trails.",
+    "price": 520,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "parking": 2,
+    "amenities": ["Pet Friendly", "Allows Smoking", "Garage"],
+    "vicinity": ["Nature Trails", "Parks", "Shops"]
   }
 ]

@@ -4,7 +4,8 @@ import Homepage from "./pages/seungmien/Homepage";
 import ErrorPage from "./pages/Root/ErrorPage";
 import RootLayout from "./pages/Root/RootLayout";
 import ResultPage from "./pages/ResultPage/ResultPage";
-import SearchPage from "./pages/jason/SearchPage";
+import SearchPage from "./pages/SearchPage/SearchPage";
+import PropertyPage from "./pages/PropertyPage/PropertyPage";
 
 // CSS style for the under construction message with tailwind
 const underConstructionStyle =
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/property/:id",
-        element: <div className={underConstructionStyle}>Coming soon ...</div>,
+        element: <PropertyPage />,
       },
       {
         path: "/search",
