@@ -6,7 +6,7 @@ import RootLayout from "./pages/Root/RootLayout";
 import ResultPage from "./pages/ResultPage/ResultPage";
 import SearchPage from "./pages/SearchPage/SearchPage";
 import PropertyPage from "./pages/PropertyPage/PropertyPage";
-
+const URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 // CSS style for the under construction message with tailwind
 const underConstructionStyle =
   "text-4xl font-bold text-red-500 flex justify-center items-center w-full h-screen bg-gradient-to-b from-gray-500 to-white";
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     id: "root",
     loader: async () => {
       // Fetch data for all routes from the server when the application loads
-      return fetch("http://localhost:5000/properties/all");
+      return fetch(`${URL}/properties/all`);
     },
     children: [
       { index: true, element: <Homepage /> }, // Homepage
