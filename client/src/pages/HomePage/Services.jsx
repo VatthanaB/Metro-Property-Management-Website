@@ -5,8 +5,8 @@ function Services() {
     
     return (
         <div className='flex justify-center pt-10'>
-            <div className='flex mx-28 gap-2'>
-                <div className='flex gap-2'>
+            <div className='md:flex mx-28 gap-2'>
+                <div className='md:flex gap-2'>
                     <div className='px-5'>
                         <img src="/images/homepage9.jpg" />
                     </div>
@@ -43,7 +43,7 @@ function Services() {
                         </div>                        
                     </div>
                 </div>
-                <div className='flex gap-2'>
+                <div className='md:flex gap-2'>
                     <div className='h-full w-60 bg-cover px-5'>
                         <img src="/images/homepage6.jpg" />
                     </div>

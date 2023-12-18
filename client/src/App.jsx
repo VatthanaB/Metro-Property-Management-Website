@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Homepage from "./pages/HomePage/Homepage";
 import { FiltersProvider } from "./Utils/contexts/FilterManagementContext";
 import Homepage from "./pages/seungmien/Homepage";
 import ErrorPage from "./pages/Root/ErrorPage";
@@ -7,6 +8,7 @@ import ResultPage from "./pages/ResultPage/ResultPage";
 import SearchPage from "./pages/SearchPage/SearchPage";
 import PropertyPage from "./pages/PropertyPage/PropertyPage";
 
+const URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 // CSS style for the under construction message with tailwind
 const underConstructionStyle =
   "text-4xl font-bold text-red-500 flex justify-center items-center w-full h-screen bg-gradient-to-b from-gray-500 to-white";
@@ -19,8 +21,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />, // Error page element for the entire application
     id: "root",
     loader: async () => {
+      console.log("fetching data from server");
       // Fetch data for all routes from the server when the application loads
-      return fetch("http://localhost:5000/properties/all");
+      return fetch(`${URL}/properties/all`);
     },
     children: [
       { index: true, element: <Homepage /> }, // Homepage
@@ -42,6 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/search",
+
         children: [
           { index: true, element: <SearchPage /> }, // Search page
           { path: "/search/results", element: <ResultPage /> }, // Result page

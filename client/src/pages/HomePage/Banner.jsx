@@ -3,7 +3,7 @@ import { MdOutlineShareLocation } from "react-icons/md";
 function Banner() {
     return (
         <div>
-            <div className=' h-96 w-full bg-cover bg-center relative'>
+            <div className='h-96 w-full bg-cover bg-center relative'>
                 <img className='w-full h-full object-cover absolute mix-blend-overlay'
                     src='/images/homepage8.jpg' />
                 <div>

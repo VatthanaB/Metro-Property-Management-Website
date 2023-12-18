@@ -9,7 +9,7 @@ const PriceAndAmenities = ({ property }) => {
   return (
     <>
       {/* MOBILE */}
-      <div className="flex-col md:hidden justify-between items-start pt-5">
+      <div className="flex-col md:hidden justify-between items-start pt-5  ">
         <p className="md:hidden flex text-2xl pl-5 pb-3 space-x-2 ">
           <MdOutlineLocationOn className="text-red-600" />
           <p className="font-extralight text-base">{property.address}</p>
@@ -38,7 +38,7 @@ const PriceAndAmenities = ({ property }) => {
       </div>
       {/* DESKTOP */}
       <div className=" hidden md:flex justify-between items-start pt-5">
-        <p className="md:hidden flex text-2xl pl-5 pb-3 space-x-2 ">
+        <p className="md:hidden flex text-2xl pl-5 pb-3 space-x-3 ">
           <MdOutlineLocationOn className="text-red-600" />
           <p className="font-extralight text-base">{property.address}</p>
         </p>
