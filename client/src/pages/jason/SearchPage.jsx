@@ -1,5 +1,12 @@
+import NavBar from "./NavBar";
+
 const SearchPage = () => {
-  return <div>SearchPage</div>;
+  return (
+    <div>
+      <div>SearchPage</div>
+      <NavBar />
+    </div>
+  );
 };
 
 export default SearchPage;
