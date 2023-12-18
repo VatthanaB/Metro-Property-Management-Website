@@ -10,7 +10,7 @@ const AvailableAndMaximumTenants = () => {
       </div>
 
       <div className="flex-col md:w-1/2 px-2">
-        <div className="flex justify-between w-full px-5">
+        <div className="flex justify-between w-full px-5 text-lg">
           <p>Maximum Tenants</p>
           <p> 4</p>
         </div>
