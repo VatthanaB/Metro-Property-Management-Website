@@ -8,7 +8,7 @@ import PriceAndAmenities from "./propertCardcomponent/PriceAndAmenities";
 // PropertyCard component to display property details
 const PropertyCard = (property) => {
   // Check if the screen size is mobile
-
+  const test = "ok";
   const carrouselImages = [property.image, "interior", "bedroom", "pool"];
   return (
     <div className="w-full rounded md:rounded-xl  pb-5 overflow-hidden shadow-xl md:my-6 text-gray-600">
@@ -25,7 +25,7 @@ const PropertyCard = (property) => {
       <PriceAndAmenities property={property} />
 
       {/* Available / Maximum Tenants */}
-      <div className="  md:flex justify-between my-3 text-gray-600 font-normal">
+      <div className="  md:flex justify-between my-3 text-gray-600 font-normal ">
         <div className="md:flex-col md:w-1/2 px-2">
           <div className="flex justify-between w-full px-5">
             <p>Available</p>
