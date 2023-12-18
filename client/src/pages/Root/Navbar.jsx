@@ -7,11 +7,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function MainNavigation() {
   // Desktop version
   const DesktopMenu = () => (
-    <ul className="md:flex hidden md:space-x-16 lg:space-x-30 ml-5">
+    <ul className="lg:flex  justify-between items-center text-xl hidden   w-full">
+      <Link to="/">
+        <img className="lg:w-72  " src={MetroLogo}></img>
+      </Link>
       {links.map((link) => (
         <NavLink
           className={classNames({
-            "text-2xl text-gray-100 hover:text-red-500 flex ": true,
+            "text-2xl text-gray-100 hover:text-red-500 flex min-w-fit ": true,
           })}
           key={link.href}
           to={link.href}
@@ -19,15 +22,31 @@ export default function MainNavigation() {
           {link.label}
         </NavLink>
       ))}
+      <Link
+        to="/search/results"
+        className="text-red-600 min-w-fit font-bold text-2xl hidden lg:flex justify-end "
+      >
+        09 391 4642
+      </Link>
     </ul>
   );
 
   // Mobile version
   const MobileMenu = () => (
-    <div className="relative">
+    <div className="flex justify-between items-center w-full lg:hidden">
+      <Link to="/">
+        <img className="w-28 sm:w-32 md:w-48 md:ml-10  " src={MetroLogo}></img>
+      </Link>
+      <Link
+        to="/search"
+        className=" lg:hidden text-sm md:text-2xl  min-w-fit   text-gray-100 hover:text-red-500 flex  "
+      >
+        <IoSearchSharp className=" text-3xl mx-1 md:mx-3   hover:text-red-500" />{" "}
+        Rental Property
+      </Link>
       <Menu>
         <Menu.Button>
-          <GiHamburgerMenu className="text-4xl text-white " />
+          <GiHamburgerMenu className="text-4xl md:text-5xl text-white md:mr-10   " />
         </Menu.Button>
         <Menu.Items className="absolute -right-4 top-16 w-40 bg-black bg-opacity-80 space-y-2 text-xl rounded flex-col items-center pt-3">
           {linksMobile.map((link) =>
@@ -92,47 +111,20 @@ export default function MainNavigation() {
   return (
     <nav
       className={classNames({
-        "flex  space-x-6 py-5 px-5 md:px-10 h-30  items-center z-50 sticky top-0 font-medium": true,
-        "pr-5 lg:pr-28": true,
+        "flex justify-evenly  py-5 px-2 xl:px-10 2xl:px-20 h-30  items-center z-50 sticky top-0 font-medium": true,
+        " ": true,
         "bg-black bg-opacity-80": true,
         // " bg-metro-grey": currentPath !== "/",
         // hidden: currentPath === "/",
       })}
     >
-      {" "}
-      <Link to="/">
-        <img className="w-32 md:w-48 lg:w-96  " src={MetroLogo}></img>
-      </Link>
-      <div
-        className={classNames({
-          "flex justify-evenly md:justify-between items-center w-full ": true,
-        })}
-      >
-        <Link
-          to="/search"
-          className=" md:hidden text-xl md:text-base  min-w-fit   text-gray-100 hover:text-red-500 flex mr-12 "
-        >
-          <IoSearchSharp className=" text-4xl mx-1 md:mx-3   hover:text-red-500" />{" "}
-          Rental Property
-        </Link>
-        <div>
-          {/* Render the desktop menu on medium screens and larger */}
-          <div className="md:block hidden">
-            <DesktopMenu />
-          </div>
+      {/* Render the desktop menu on medium screens and larger */}
 
-          {/* Render the mobile menu on small screens */}
-          <div className="md:hidden">
-            <MobileMenu />
-          </div>
-        </div>
-      </div>
-      <Link
-        to="/search/results"
-        className="text-red-600 min-w-fit font-bold text-2xl hidden lg:flex justify-end "
-      >
-        09 391 4642
-      </Link>
+      <DesktopMenu />
+
+      {/* Render the mobile menu on small screens */}
+
+      <MobileMenu />
     </nav>
   );
 }

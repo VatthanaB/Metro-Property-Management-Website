@@ -6,7 +6,7 @@ import CardCarroussel from "./propertyCardComponents/CardCarroussel";
 import PriceAndAmenities from "./propertyCardComponents/PriceAndAmenities";
 import AvailableAndMaximumTenants from "./propertyCardComponents/AvailableAndMaximumTenants";
 import AmenitiesAndVicinity from "./propertyCardComponents/AmenitiesAndVicinity";
-import PropertyAddress from "./propertyCardComponents/propertyAddress";
+import PropertyAddress from "./propertyCardComponents/PropertyAddress";
 // PropertyCard component to display property details
 const PropertyCard = (property) => {
   // Check if the screen size is mobile
