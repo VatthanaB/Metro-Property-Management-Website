@@ -5,10 +5,11 @@ import Header from "./components/Header.jsx";
 import BackToTopButton from "./components/BackToTopButton.jsx";
 import PaginationControls from "./components/PaginationControls.jsx";
 import SimilarProperty from "./components/SimilarProperty.jsx";
-import PropertyCard from "./components/PropertyCardCa";
+
 import { filterData } from "../../Utils/filteringHandler.js";
 import { useFilters } from "../../Utils/contexts/FilterManagementContext";
 import { usePagination } from "../../Utils/paginationUtils.js"; // Import the pagination utility
+import MappedPropertyCards from "./components/MappedPropertyCards.jsx";
 
 // ResultPage component to display filtered properties with pagination
 
@@ -54,11 +55,7 @@ const ResultPage = () => {
         <Header onSortChange={handleSortChange} resultNumber={resultNumber} />
 
         {/* Display filtered properties */}
-        <div className="flex flex-col space-y-5">
-          {currentItems.map((property) => (
-            <PropertyCard key={property.id} {...property} />
-          ))}
-        </div>
+        <MappedPropertyCards currentItems={currentItems} />
 
         {/* Similar property display */}
         <SimilarProperty data={data} />
