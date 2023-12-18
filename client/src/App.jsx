@@ -44,6 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/search",
+
         children: [
           { index: true, element: <SearchPage /> }, // Search page
           { path: "/search/results", element: <ResultPage /> }, // Result page
