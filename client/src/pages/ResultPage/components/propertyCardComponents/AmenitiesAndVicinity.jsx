@@ -55,7 +55,7 @@ const AmenitiesAndVicinity = ({ property }) => {
       )}
       <div className="hidden md:flex  space-x-10 justify-start items-center">
         <ul className="flex space-x-3 font-extralight">
-          <p className="text-xl">Amenities</p>
+          <p className="text-xl font-base">Amenities</p>
           {property.amenities.map((amenity, index) => (
             <li
               className="rounded-3xl px-2 py-1 border-2 border-gray-300 self-center"
@@ -68,8 +68,8 @@ const AmenitiesAndVicinity = ({ property }) => {
       </div>
 
       <div className="hidden md:flex space-x-10 justify-start items-center">
-        <p className="text-xl">Vicinity</p>
         <ul className="flex space-x-3 font-extralight">
+          <p className="text-xl  ">Vicinity</p>
           {property.vicinity.map((vicinity, index) => (
             <li
               className="rounded-3xl px-2 py-1 border-2 border-gray-300 self-center"
