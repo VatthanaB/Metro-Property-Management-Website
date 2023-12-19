@@ -1,4 +1,5 @@
-import Awards from "./Awards";
+
+import Awards2 from "./Awards2";
 import Banner from "./Banner";
 import Carousel from "./Carousel";
 import Carousel2 from "./Carousel2";
@@ -38,8 +39,8 @@ const Homepage = () => {
       ))}
     </Carousel>
       
-            
-    <Awards/>
+    <Awards2/>        
+    
      </div>;
 };
 
