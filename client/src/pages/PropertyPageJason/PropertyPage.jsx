@@ -1,7 +1,8 @@
 // Importing necessary hooks and components from 'react-router-dom' and local files
 import { useRouteLoaderData, useParams, Link } from "react-router-dom";
 import DynamicCarouselDiv from "./components/DynamicCarouselDiv";
-import MatchPriceAndAmenities from "../ResultPage/components/propertyCardComponents/PriceAndAmenities";
+// import MatchPriceAndAmenities from "../ResultPage/components/propertyCardComponents/PriceAndAmenities";
+import PriceAndAmenitiesMatch from "./components/PriceAndAmenitiesMatch";
 
 // PropertyPage is a functional component
 const PropertyPage = () => {
@@ -33,7 +34,8 @@ const PropertyPage = () => {
       {/* DynamicCarouselDiv component is passed the 'property' object as a prop */}
       <DynamicCarouselDiv property={property} />
       <div className="flex flex-col">
-        <MatchPriceAndAmenities property={property} />
+        {/* <MatchPriceAndAmenities property={property} /> */}
+        <PriceAndAmenitiesMatch property={property} />
       </div>
     </div>
   );
