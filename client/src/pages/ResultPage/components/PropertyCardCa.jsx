@@ -12,6 +12,7 @@ const PropertyCard = (property) => {
   // Check if the screen size is mobile
 
   const carrouselImages = [property.image, "interior", "bedroom", "pool"];
+
   return (
     <div className="w-full rounded md:rounded-xl  pb-5 overflow-hidden shadow-xl md:my-6 text-gray-600">
       {/* Address and icons */}
