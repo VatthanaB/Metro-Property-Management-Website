@@ -6,7 +6,7 @@ import ErrorPage from "./pages/Root/ErrorPage";
 import RootLayout from "./pages/Root/RootLayout";
 import ResultPage from "./pages/ResultPage/ResultPage";
 import SearchPage from "./pages/SearchPage/SearchPage";
-import PropertyPage from "./pages/PropertyPage/PropertyPage";
+import PropertyPage from "./pages/PropertyPageJason/PropertyPage";
 
 const URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 // CSS style for the under construction message with tailwind
