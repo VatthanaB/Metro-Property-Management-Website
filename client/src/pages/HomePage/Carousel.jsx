@@ -15,9 +15,9 @@ const Carousel = ({ children: comments, autoSlide = false, autoSlideInterval = 3
         return () => clearInterval(slideInterval)
     }, [])
     return (
-        <div className='overflow-hidden'>
+        <div >
 
-            <div className='flex text-xl'>
+            <div className='flex overflow-hidden text-xl'>
                 {comments}
             </div>
 

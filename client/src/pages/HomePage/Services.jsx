@@ -7,10 +7,13 @@ function Services() {
         <div className='flex justify-center pt-10'>
             <div className='md:flex mx-28 gap-2'>
                 <div className='md:flex gap-2'>
-                    <div className='px-5'>
+                    <div className='hidden lg:block md:block px-5'>
                         <img src="/images/homepage9.jpg" />
                     </div>
-                    <div className='self-start px-5'>
+                    <div className='lg:hidden md:hidden px-5 sm:p-5'>
+                        <img src="/images/serviceRec1.jpg" />
+                    </div>
+                    <div className='self-start px-5 sm:py-5'>
                         <h2 className='text-[24px] font-bold'>Landlord Services</h2>
                         <div className='pt-10'>
                             <ul>
@@ -44,10 +47,13 @@ function Services() {
                     </div>
                 </div>
                 <div className='md:flex gap-2'>
-                    <div className='h-full w-60 bg-cover px-5'>
+                    <div className='hidden lg:block md:block px-5 '>
                         <img src="/images/homepage6.jpg" />
                     </div>
-                    <div className='px-5'>
+                    <div className='lg:hidden md:hidden px-5 sm:py-8'>
+                        <img src="/images/serviceRec2.jpg" />
+                    </div>
+                    <div className='px-5 sm:pt-5'>
                         <h2 className='text-[24px] font-bold'>Tenant Services</h2>
                         <div className='pt-10'>
                             <ul>
