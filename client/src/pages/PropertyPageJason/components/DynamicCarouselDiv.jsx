@@ -14,7 +14,7 @@ const DynamicCarouselDiv = ({ property }) => {
   const carrouselImages = [property.image, "interior", "bedroom", "pool"];
 
   // Filtered array of carousel images excluding the current slide
-  const bulshitData = carrouselImages.filter(
+  const imageTrio = carrouselImages.filter(
     (_, index) => index !== currentSlide
   );
 
@@ -25,7 +25,7 @@ const DynamicCarouselDiv = ({ property }) => {
 
   // The component returns a JSX structure
   return (
-    <div className="pt-2 lg:p-5 w-full md:w-4/5 ">
+    <div className="pt-2 lg:p-5 w-full md:w-4/5">
       {/* CardCarroussel component is passed the carousel images, property object, and setCurrentSlide function as props */}
       <CardCarroussel
         carrouselImages={carrouselImages}
@@ -35,7 +35,7 @@ const DynamicCarouselDiv = ({ property }) => {
 
       <div className="hidden lg:flex max-w-full space-x-1">
         {/* Mapping over the filtered carousel images to display them */}
-        {bulshitData.map((image, index) => {
+        {imageTrio.map((image, index) => {
           let style = "";
           // Setting style based on the index of the image
           if (index === 0) {
