@@ -16,8 +16,8 @@ function Banner() {
                                 <h1 className='text-white text-6xl font-normal'>Auckland</h1>
                             </div>                            
                         </div>
-                        <div className='pl-2'>
-                            <p className='text-white text-[32] font-normal'>Property Management</p>
+                        <div className='pl-2 mt-6 lg:mt-8 '>
+                            <p className='text-white text-3xl lg:text-3xl font-normal'>Property Management</p>
                         </div>
                     </div>
                 </div>

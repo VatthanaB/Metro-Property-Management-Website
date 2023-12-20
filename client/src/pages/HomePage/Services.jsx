@@ -4,14 +4,14 @@ import {Link} from 'react-router-dom'
 function Services() {
     
     return (
-        <div className='flex justify-center pt-10'>
-            <div className='md:flex mx-28 gap-2'>
+        <div className='flex justify-center items-center mx-0 md:ml-72 pt-10 lg:pl-0'>
+            <div className='md:flex   w-full gap-2'>
                 <div className='md:flex gap-2'>
-                    <div className='hidden lg:block md:block px-5'>
+                    <div className='hidden lg:block md:block px-5 sm:px-0'>
                         <img src="/images/homepage9.jpg" />
                     </div>
-                    <div className='lg:hidden md:hidden px-5 sm:p-5'>
-                        <img src="/images/serviceRec1.jpg" />
+                    <div className='lg:hidden md:hidden px-5 sm:p-5 sm:w-full object-cover'>
+                        <img src="/images/ServiceRectang1.jpg" />
                     </div>
                     <div className='self-start px-5 sm:py-5'>
                         <h2 className='text-[24px] font-bold'>Landlord Services</h2>
@@ -47,11 +47,11 @@ function Services() {
                     </div>
                 </div>
                 <div className='md:flex gap-2'>
-                    <div className='hidden lg:block md:block px-5 '>
+                    <div className='hidden lg:block md:block lg:pr-2 lg:pl-2'>
                         <img src="/images/homepage6.jpg" />
                     </div>
                     <div className='lg:hidden md:hidden px-5 sm:py-8'>
-                        <img src="/images/serviceRec2.jpg" />
+                        <img src="/images/ServiceRectang2.jpg" />
                     </div>
                     <div className='px-5 sm:pt-5'>
                         <h2 className='text-[24px] font-bold'>Tenant Services</h2>
