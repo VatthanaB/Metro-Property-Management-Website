@@ -1,6 +1,13 @@
 // Importing necessary hooks and components from 'react-router-dom' and local files
 import { useRouteLoaderData, useParams, Link } from "react-router-dom";
 import DynamicCarouselDiv from "./components/DynamicCarouselDiv";
+// import MatchPriceAndAmenities from "../ResultPage/components/propertyCardComponents/PriceAndAmenities";
+import PriceAndAmenitiesMatch from "./components/PriceAndAmenitiesMatch";
+import AmenitiesAndVicinityMatchDesktop from "./components/AmenitiesAndVicinityMatchDesktop";
+import AvailableAndMaximumTenantsMatch from "./components/AvailableAndMaximumTenantsMatch";
+import AddressMatch from "./components/AddressMatch";
+import AmenitiesAndVicinityMatchMobile from "./components/AmenitiesAndVicinityMatchMobile";
+import StickyTags from "./components/StickyTags";
 
 // PropertyPage is a functional component
 const PropertyPage = () => {
@@ -31,6 +38,23 @@ const PropertyPage = () => {
       </div>
       {/* DynamicCarouselDiv component is passed the 'property' object as a prop */}
       <DynamicCarouselDiv property={property} />
+      {/* Card Block from price and logo'd amenities to available and max tenants (Address to See Amenities & Vicinity for Mobile) */}
+      <div className="flex flex-col items-center">
+        {/* <MatchPriceAndAmenities property={property} /> */}
+        <PriceAndAmenitiesMatch property={property} />
+        <div className="flex flex-col w-4/5 space-y-2 md:space-y-4">
+          <hr className="md:hidden border-1 border-gray-300" />
+          <AmenitiesAndVicinityMatchDesktop property={property} />
+          <hr className="hidden md:flex border-1 border-gray-300" />
+          <AddressMatch property={property} />
+          <hr className="hidden md:flex border-1 border-gray-300" />
+          <AvailableAndMaximumTenantsMatch property={property} />
+          <AmenitiesAndVicinityMatchMobile property={property} />
+        </div>
+      </div>
+      {/* End of Card Block */}
+      {/* Stickies */}
+      <StickyTags />
     </div>
   );
 };

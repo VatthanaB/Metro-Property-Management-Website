@@ -1,57 +1,52 @@
-// Disabling eslint rule for prop-types
 /* eslint-disable react/prop-types */
+// Disabling eslint rule for prop-types
 
-// Importing necessary hooks and components
 import { useState, useEffect } from "react";
 import CardCarroussel from "../../ResultPage/components/propertyCardComponents/CardCarroussel";
 
-// DynamicCarouselDiv is a functional component that takes 'property' as a prop
+// Component for dynamic carousel
 const DynamicCarouselDiv = ({ property }) => {
-  // useState hook is used to manage the current slide index
+  // State for current slide - current image in carousel
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Array of carousel images
+  // Images for the carousel
   const carrouselImages = [property.image, "interior", "bedroom", "pool"];
 
-  // Filtered array of carousel images excluding the current slide
-  const imageTrio = carrouselImages.filter(
-    (_, index) => index !== currentSlide
-  );
-
-  // useEffect hook is used to log the current slide index whenever it changes
+  // Effect to log the current slide (when the slide changes)
   useEffect(() => {
     console.log(currentSlide);
   }, [currentSlide]);
 
-  // The component returns a JSX structure
+  // Component output/return
   return (
     <div className="pt-2 lg:p-5 w-full md:w-4/5">
-      {/* CardCarroussel component is passed the carousel images, property object, and setCurrentSlide function as props */}
+      {/* Carousel Card */}
       <CardCarroussel
         carrouselImages={carrouselImages}
         property={property}
         setCurrentSlide={setCurrentSlide}
       />
 
+      {/* This code is assuming that index 0 is the image in the main carousel, and then indexes 3,2,1 are displayed in the imageTrio, and it is cycled in order (cyclical for better user experience) */}
       <div className="hidden lg:flex max-w-full space-x-1">
-        {/* Mapping over the filtered carousel images to display them */}
-        {imageTrio.map((image, index) => {
+        {[3, 2, 1].map((offset) => {
+          // Calculate index for the image
+          const index = (currentSlide + offset) % carrouselImages.length;
           let style = "";
-          // Setting style based on the index of the image
-          if (index === 0) {
+
+          // Set style based on offset (this is for the border-radius on bottom of the imageTrio)
+          if (offset === 1) {
             style = "rounded-bl-xl";
-          } else if (index === 1) {
-            style = "style-for-index-1";
-          } else if (index === 2) {
+          } else if (offset === 3) {
             style = "rounded-br-xl";
           }
 
-          // Returning an img element for each image
+          // Return image element
           return (
             <img
-              key={index}
+              key={offset}
               className={`w-1/3 h-[200px] md:h-[200px]  object-cover transition duration-800 ease-in-out ${style}`}
-              src={`/images/property/${image}.jpeg`}
+              src={`/images/property/${carrouselImages[index]}.jpeg`}
               alt={property.type}
             />
           );
@@ -61,5 +56,4 @@ const DynamicCarouselDiv = ({ property }) => {
   );
 };
 
-// Exporting DynamicCarouselDiv component for use in other parts of the application
 export default DynamicCarouselDiv;
