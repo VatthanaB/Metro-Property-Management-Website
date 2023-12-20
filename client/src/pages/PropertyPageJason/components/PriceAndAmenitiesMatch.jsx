@@ -13,7 +13,9 @@ const PriceAndAmenitiesMatch = ({ property }) => {
       <div className="flex flex-col md:flex-row w-screen justify-center gap-4 p-4 md:gap-0 md:p-0 md:justify-between md:items-center md:w-4/5 whitespace-nowrap">
         <div className="md:hidden flex text-2xl pl-5 pb-3 space-x-2 ">
           <MdOutlineLocationOn className="text-red-600" />
-          <p className="font-normal text-2xl">{property.address}</p>
+          <p className="font-normal text-2xl whitespace-normal">
+            {property.address}
+          </p>
         </div>
         <div className="flex text-2xl items-center font-normal px-6">
           <FaDollarSign className="text-red-600" />
