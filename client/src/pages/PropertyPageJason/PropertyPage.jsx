@@ -7,7 +7,7 @@ import AmenitiesAndVicinityMatchDesktop from "./components/AmenitiesAndVicinityM
 import AvailableAndMaximumTenantsMatch from "./components/AvailableAndMaximumTenantsMatch";
 import AddressMatch from "./components/AddressMatch";
 import AmenitiesAndVicinityMatchMobile from "./components/AmenitiesAndVicinityMatchMobile";
-import StickyTags from "./components/StickyTags";
+// import StickyTags from "./components/StickyTags";
 
 // PropertyPage is a functional component
 const PropertyPage = () => {
@@ -54,7 +54,7 @@ const PropertyPage = () => {
       </div>
       {/* End of Card Block */}
       {/* Stickies */}
-      <StickyTags />
+      {/* <StickyTags /> */}
     </div>
   );
 };
