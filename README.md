@@ -13,7 +13,6 @@ Metro Property Management Website is a web application designed to help users se
   - [Backend](#backend)
 - [Docker Compose](#docker-compose)
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
 
 ## Getting Started
 

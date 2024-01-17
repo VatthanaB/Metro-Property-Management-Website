@@ -1,8 +1,8 @@
 import PropertyCarousel from "./PropertyCarousel";
-
+import style from "./PropertyPage.module.css";
 const PropertyPage = () => {
   return (
-    <div>
+    <div className={style.text}>
       {" "}
       Joshua PropertyPage !!!!!!!
       <div>
